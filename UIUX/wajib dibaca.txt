@@ -1,0 +1,4 @@
+============================================================
+Untuk setiap anggota divisi harap membuat folder sendiri,		
+akan ada branch utama apabila sudah mendapatkan fix (Fusion)
+============================================================
