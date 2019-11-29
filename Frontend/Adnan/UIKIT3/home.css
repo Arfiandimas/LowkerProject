@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.uk-navbar-left {
+  margin: 1em 0 0 2em;
+}
+.uk-navbar-nav > li > a {
+  font-size: large;
+}
+.uk-navbar-nav > li.uk-active > a {
+  color: #0088ff;
+}
+.uk-navbar-nav > li > a {
+  color: black;
+  font-size: small;
+}
+.uk-navbar-nav button {
+  color: white;
+}
+
+table {
+  text-align: left;
+  display: inline-table;
+}
+.vlog {
+  max-width: 75%;
+}
+
+/* .login-button{
+    font-size: 0.850rem;
+    line-height: 30px;
+} */
+
+.btnLogin {
+  width: 117px;
+  height: 31px;
+  line-height: 0;
+  font-size: 15px;
+}
+
+.uk-text-blod {
+  font-size: 15px;
+}
+.dropdown {
+  width: 50%;
+}
+
+.datasearch {
+  padding-left: 20px;
+}
+
+#card-animate {
+  margin-bottom: 5px;
+}
+
+/* .bg-image {
+  width: 100%;
+  position: absolute;
+  background-image: url("ICON/bannerfix.png");
+  background-position: center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 553px;
+  z-index: -1;
+} */
+
+.bg-image {
+  height: 100%;
+}
+
+.bg-image-b {
+  position: absolute;
+  background-image: url("ICON/bannerfix.png");
+  background-position: center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 384px;
+  z-index: -1;
+}
+
+#bg-svg {
+  background: url("ICON/bg/Polygon17.svg") no-repeat;
+  background-size: cover;
+  background-position-x: -75em;
+  background-position-y: -85em;
+}
+
+#bgsvg2 {
+  background: url("ICON/bg/Polygon18.svg") no-repeat;
+  background-size: cover;
+  background-position-y: -90em;
+  background-position-x: 37em;
+}
+
+#bgsvg3 {
+  background: url("ICON/bg/Polygon19.svg") no-repeat;
+  background-size: cover;
+  background-position-y: -45em;
+  background-position-x: -105em;
+}
+
+/* #bgsvg3 img {
+  transform: rotate(-20deg);
+} */
+
+.contentTitle {
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+}
+
+.card-lowongan p {
+  font-size: smaller;
+}
+
+.judul {
+  text-align: center;
+  color: #fff;
+  margin-top: -10em;
+}
+
+.search {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+#pencarian {
+  background-color: #ffffff;
+  color: grey;
+  width: 52vh;
+}
+
+.uk-card-primary.uk-card-body .uk-form-icon,
+.uk-card-primary > :not([class*="uk-card-media"]) .uk-form-icon,
+.uk-card-secondary.uk-card-body .uk-form-icon,
+.uk-card-secondary > :not([class*="uk-card-media"]) .uk-form-icon,
+.uk-light .uk-form-icon,
+.uk-offcanvas-bar .uk-form-icon,
+.uk-overlay-primary .uk-form-icon,
+.uk-section-primary:not(.uk-preserve-color) .uk-form-icon,
+.uk-section-secondary:not(.uk-preserve-color) .uk-form-icon,
+.uk-tile-primary:not(.uk-preserve-color) .uk-form-icon,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-form-icon {
+  color: grey;
+}
+
+.uk-card-primary.uk-card-body .uk-form-icon:hover,
+.uk-card-primary > :not([class*="uk-card-media"]) .uk-form-icon:hover,
+.uk-card-secondary.uk-card-body .uk-form-icon:hover,
+.uk-card-secondary > :not([class*="uk-card-media"]) .uk-form-icon:hover,
+.uk-light .uk-form-icon:hover,
+.uk-offcanvas-bar .uk-form-icon:hover,
+.uk-overlay-primary .uk-form-icon:hover,
+.uk-section-primary:not(.uk-preserve-color) .uk-form-icon:hover,
+.uk-section-secondary:not(.uk-preserve-color) .uk-form-icon:hover,
+.uk-tile-primary:not(.uk-preserve-color) .uk-form-icon:hover,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-form-icon:hover {
+  color: black;
+}
+
+.search {
+  text-align: center;
+}
+
+#section-a {
+  height: 553px;
+}
+#section-b {
+  height: 384px;
+}
+.testimoni {
+  height: 19em;
+}
+.testimoniul {
+  min-height: -webkit-fill-available !important;
+}
+.footer {
+  background-color: #212121;
+  color: white;
+  width: auto;
+  margin: 0;
+  padding: 16px;
+  height: auto;
+  padding-bottom: 10em;
+  font-size: 15px;
+}
+.footer-isi {
+  margin: 2em 0 0 0;
+}
+.footer ul li {
+  list-style-type: none;
+}
+.footer ol,
+ul {
+  padding-left: 0px;
+}
+.footer img {
+  max-width: 20%;
+}
+.footer form {
+  width: 10.5em;
+  margin: 1em 0 0 -8px;
+}
+.bahasa {
+  background-color: currentColor;
+}
+
+.menu-parent {
+  width: 28%;
+}
+.menu-dashboard {
+  display: inline-grid;
+  margin: 0px 0 0 1em;
+}
+.menu-kanan {
+  width: 70%;
+}
+.menu-kanan ul {
+  display: inline-flex;
+  list-style-type: none;
+}
+.menu-kanan ul li {
+  margin: 0 2em 0 4px;
+}
+.slider-bendera {
+  padding: 1em;
+  margin: 15px 0 0 -38px;
+}
+.slider-bendera h3 {
+  font-size: larger;
+}
+.japan-modal {
+  display: inline-flex;
+  margin: 0px 0 0 5em;
+}
+.japan-modal li {
+  display: inline-grid;
+  margin: 23px 59px 0 25px;
+}
+.japan-modal img {
+  max-width: 100px;
+}
+.japan-modal h4 {
+  color: black;
+}
+footer a {
+  color: white;
+}
+/*START BANNER CSS*/
+.bungkus-banner {
+  display: grid;
+}
+.bg-banner {
+  position: relative;
+}
+.bg-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 50%;
+}
+
+/*END BANNER CSS*/
+.canvas-hamburger {
+  background: grey;
+  color: white;
+}
+
+.profile-burger {
+  padding: 3px 0 4px 8px;
+}
+.profile-burger img {
+  max-width: 50%;
+}
+.profile-burger ul li a {
+  display: flex;
+  color: black;
+}
+.uk-offcanvas-bar {
+  /* background: #0f6ecd; */
+  background: #1e87f0;
+}
+
+.uk-navbar-toggle {
+  color: #333;
+}
+
+/* RESPONSIVE PLAYS */
+@media (max-width: 1199px) and (min-width: 992px) {
+  /* IPAD TIDUR */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  /* IPAD BERDIRI */
+}
+
+@media (max-width: 767px) and (min-width: 482px) {
+  /* ANDROID TIDUR */
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
+  /* ANDROID BERDIRI */
+  /* ===========NAVBAR============= */
+  .uk-h2,
+  h2 {
+    font-size: 1rem;
+  }
+  /* ===========BACKGROUND IMG============= */
+  .bg-image {
+    height: 22vh;
+  }
+  .uk-h1,
+  h1 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  .judul {
+    margin-top: 0;
+    margin-bottom: 5%;
+  }
+}
+/* 
+terakhir sampai searchbar dan daftar sebagai. */

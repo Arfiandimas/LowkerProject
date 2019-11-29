@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lowongan Kerja</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="hometest.css">
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+
+        <!-- BAGIAN NAVBAR -->
+
+<div class="uk-container-expand">
+<nav class="uk-navbar-container" uk-navbar>
+
+    <div class="uk-navbar-left">
+       <a href="home.html"><h2 class="header-font">Your <strong>Company</strong></h2></a>
+    </div>
+
+    <div class="uk-navbar-right">
+
+         <ul class="navigasi uk-navbar-nav">
+
+            <li class="uk-active uk-text-bold"><a href="#">Beranda</a></li>
+            <li class="uk-text-bold"><a  href="#">Pembelajaran</a></li>
+            <li class="uk-text-bold"><a href="#">Gallery</a></li>
+            <li class="uk-text-bold"><a href="#">Tentang Kami</a></li>
+            
+            
+            
+        </ul>
+
+        
+            
+           <button id="hamburger" class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav" style="width: 100%;
+    margin-left: -10%;"><span uk-icon="icon: table"></span></button>
+            <div id="offcanvas-nav" uk-offcanvas="flip:true; overlay:true;">
+    <div class="canvas-hamburger uk-offcanvas-bar">
+
+        <div class="profile-burger uk-box-shadow-large">
+            Profile
+            
+        </div>
+        
+
+        <ul class="profile-burger uk-nav uk-nav-default">
+            
+            <li style="display: flex;"><a href="#"><img src="ICON/information.png" alt=""><h5>Hello, Annisa</h5></a></li>
+            </li>
+            <li class="uk-nav-header">Main Menu</li>
+            <li><a href="#"><span class="uk-margin-small-right"></span>BERANDA</a></li>
+            <li><a href="#"><span class="uk-margin-small-right"></span> PEMBELAJARAN</a></li>
+            <li><a href="#"><span class="uk-margin-small-right"></span> GALLERY</a></li>
+            <li><a href="#"><span class="uk-margin-small-right"></span> TENTANG KAMI</a></li>
+            
+            <li class="uk-nav-divider"></li>
+            
+        </ul>
+
+    </div>
+</div>
+        
+
+    </div>
+</nav>
+</div>
+<!-- END BAGIAN NAVBAR -->
+
+<!-- BAGIAN BANNER -->
+
+    <div  id="section-b" class="uk-container-expand">
+        <div class="bg-image-b"></div>
+            <h1 class="judul">Pencarian Informasi Semua Lowongan</h1>
+
+            <div class="form-lowker uk-container-expand uk-grid" style="margin: 0 -111px 0 70px;">
+
+
+            <!-- FORM START -->
+             <div class="form-lowker-a boundary-align uk-panel uk-placeholder"> 
+            <div class="uk-inline-clip">
+                    <input id="pencarian" class="uk-input uk-form-width-small uk-light" type="text" placeholder="Masukan kata kunci" style="background-color:#ffffff;color:grey;">
+                     
+               <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: triangle-down"></a>
+               </div>
+               <div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true" style="max-width: 499.031px;">
+
+                <div class="uk-panel uk-panel-scrollable" style="border: none">
+                   
+                </div>
+                   
+    
+                </div>
+            </div>
+            <!-- END START -->
+
+            <!-- FORM START -->
+             <div class="form-lowker-b boundary-align uk-panel uk-placeholder"> 
+            <div class="uk-inline-clip">
+                    <input id="pencarian" class="uk-input uk-form-width-small uk-light" type="text" placeholder="Kategori Lowongan Kerja" style="background-color:#ffffff;color:grey;">
+                     
+               <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: triangle-down"></a>
+               </div>
+               <div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true" style="max-width: 499.031px;">
+
+                <div class="uk-panel uk-panel-scrollable" style="border: none">
+                   
+                </div>
+                   
+    
+                </div>
+            </div>
+            <!-- END START -->
+
+            <!-- FORM START -->
+             <div class="form-lowker-c boundary-align uk-panel uk-placeholder"> 
+            <div class="uk-inline-clip">
+                    <input id="pencarian" class="uk-input uk-form-width-small uk-light" type="text" placeholder="Wilayah : Nasional,Prov" style="background-color:#ffffff;color:grey;">
+                     
+               <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: triangle-down"></a>
+               </div>
+               <div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true" style="max-width: 499.031px;">
+
+                <div class="uk-panel uk-panel-scrollable" style="border: none">
+                   
+                </div>
+                   
+    
+                </div>
+            </div>
+            <!-- END START -->
+             <!-- FORM START -->
+             <div class="form-lowker-d boundary-align uk-panel uk-placeholder"> 
+            <div class="uk-inline-clip">
+                    <input id="pencarian" class="uk-input uk-form-width-small uk-light" type="text" placeholder="Nama Kab/Kota" style="background-color:#ffffff;color:grey;">
+                     
+               <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: triangle-down"></a>
+               </div>
+               <div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true" style="max-width: 499.031px;">
+
+                <div class="uk-panel uk-panel-scrollable" style="border: none">
+                   
+                </div>
+                   
+    
+                </div>
+            </div>
+            <!-- END START -->
+
+            <button class="button-lowker uk-button uk-button-primary uk-width-1-6" >Cari</button>
+
+
+
+
+            </div>
+
+            </div>
+         
+           
+
+<!-- END BAGIAN BANNER -->
+
+<div class="card-lowongan uk-container-expand uk-padding-large">
+    <div class="uk-card uk-card-default uk-card-body uk-margin-medium-top uk-width-1-1 uk-align-center" style="width: 90%;">
+    <h5 class="uk-card-title">Sales & Marketing</h5>
+    <i class="fas fa-chevron-right fa-2x uk-float-right"></i>
+    <p>PT. OSCARMAS</p>
+    
+    <p>Kabupaten Bekasi, Provinsi Jawa Barat</p>
+    <p>25 Okt 2019- 25 Nov 2019</p>
+    
+</div>
+
+<div class="uk-card uk-card-default uk-card-body uk-width-1-1 uk-align-center" style="width: 90%;">
+    <h5 class="uk-card-title">Sales & Marketing</h5>
+    <i class="fas fa-chevron-right fa-2x uk-float-right"></i>
+    <p>PT. OSCARMAS</p>
+    <p>Kabupaten Bekasi, Provinsi Jawa Barat</p>
+    <p>25 Okt 2019- 25 Nov 2019</p>
+</div>
+
+<div class="uk-card uk-card-default uk-card-body uk-width-1-1 uk-align-center" style="width: 90%;">
+    <h5 class="uk-card-title">Sales & Marketing</h5>
+    <i class="fas fa-chevron-right fa-2x uk-float-right"></i>
+    <p>PT. OSCARMAS</p>
+    <p>Kabupaten Bekasi, Provinsi Jawa Barat</p>
+    <p>25 Okt 2019- 25 Nov 2019</p>
+</div>
+
+<ul class="uk-pagination uk-flex-right uk-margin-medium-top" uk-margin>
+    <li><a href="#"><span uk-pagination-previous></span></a></li>
+    <li><a href="#">1</a></li>
+    <li class="uk-disabled"><span>...</span></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li class="uk-active"><span>7</span></li>
+    <li><a href="#">8</a></li>
+    <li><a href="#"><span uk-pagination-next></span></a></li>
+</ul>
+
+
+
+</div>
+
+
+
+
+    <!-- <div class="uk-container-expand">
+
+        <footer>
+                <div class="footer uk-container uk-container-expand">
+                   <div class="footer-isi uk-child-width-expand@s" uk-grid>
+                    <div>
+                        <ul>
+                            <li class="uk-text-bold">Perusahaan</li>
+                            <a href=""><li>Beranda</li></a>
+                            <a href=""><li>Harga&Paket</li></a>
+                        
+                        
+                        
+                    </ul>
+                </div>
+                    <div>
+                        <ul>
+                            <li class="uk-text-bold">Produk dan Layanan</li>
+                            <a href=""><li>Lowongan Kerja</li></a>
+                            <a href=""><li>Pembelajaran</li></a>
+                            <a href=""><li>Magang</li></a>
+                    </ul>
+                    </div>
+                    <div>
+                         <ul>
+                            <li class="uk-text-bold">Bantuan</li>
+                            <a href=""><li>Hubungi Kami</li></a>
+                            <a href=""> <li>FAQ</li></a>
+                    </ul>
+                    </div>
+                     <div>
+                         <ul>
+                            <li class="uk-text-bold">Informasi Lainnya</li>
+                            <a href=""><li>Testimoni</li></a>
+                        
+                        
+                    </ul>
+                    </div>
+                    <div>
+                         <ul class="uk-align-center">
+                            <li class="uk-text-bold">Temukan Kami di</li>
+                        
+                        
+                    </ul>
+                    <a href=""> <img src="ICON/facebook.png" alt=""></a>
+                    <a href=""><img src="ICON/google.png" alt=""></a>
+                    <a href=""><img src="ICON/twitter.png" alt=""></a>
+                       
+                        
+
+                    <form>
+
+                         <div class="bahasa uk-margin">
+                                <div  uk-form-custom="target: > * > span:first-child">
+                                    <select>
+                                        
+                                        <option value="1">Indonesia</option>
+                                        <option value="2">Inggris</option>
+                                        <option value="3">Jepang</option>
+                                        <option value="4">Korea</option>
+                                    </select>
+                                    <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                                        <span></span>
+                                        <span uk-icon="icon: chevron-down"></span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                        </div>
+            </div>
+                </div>
+
+        </footer>
+</div>
+ -->
+    </body>
+</html>
