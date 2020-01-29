@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="landing.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <!-- TEST -->
+    <div class="uk-container-expand maine">
+      <!-- <nav class="uk-navbar-container-expand" uk-navbar>
+        <div class="uk-navbar-left">
+          <ul class="uk-navbar-nav">
+            <li class="uk-active">
+              <a href="#">Your <strong>Company</strong></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="#">Beranda</a></li>
+            <li><a href="#">Pembelajaran</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li>
+              <a href="#"
+                ><button class="uk-button uk-button-primary">Login</button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+      <nav class="uk-navbar-container" uk-navbar>
+
+        <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="home.html"><h2>Your <strong>Company</strong></h2></a>
+                   </li>
+        </div>
+    
+        <div class="uk-navbar-right">
+    
+             <ul class="navigasi uk-navbar-nav uk-visible@m">
+    
+                <li class="uk-active uk-text-bold"><a href="#">Beranda</a></li>
+                <li class="uk-text-bold"><a  href="#">Pembelajaran</a></li>
+                <li class="uk-text-bold"><a href="#">Gallery</a></li>
+                <li class="uk-text-bold"><a href="#">Tentang Kami</a></li>
+                <li><a href=""><button class="uk-button uk-button-primary btnLogin">Login</button></a></li>
+                
+                
+                
+            </ul>
+    
+            <ul class="navigasi uk-navbar-nav uk-hidden@m">
+            <li><a href="#" class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav">MENU</a></li>
+            </ul>
+    
+            
+                
+               <!-- <button id="hamburger" class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav" style="width: 100%;
+        margin-left: -10%;"><span uk-icon="icon: table"></span></button>
+                <div id="offcanvas-nav" uk-offcanvas="flip:true; overlay:true;">
+        <div class="canvas-hamburger uk-offcanvas-bar">
+    
+            <div class="profile-burger uk-box-shadow-large">
+                Profile
+                
+            </div>
+            
+    
+            <ul class="profile-burger uk-nav uk-nav-default">
+                
+                <li style="display: flex;margin-left: 4em"><a href="#"><img src="ICON/information.png" alt=""><h5>Hello, Annisa</h5></a></li>
+                </li>
+                <li class="uk-nav-header">Main Menu</li>
+                <li><a href="#"><span class="uk-margin-small-right"></span>BERANDA</a></li>
+                <li><a href="#"><span class="uk-margin-small-right"></span> PEMBELAJARAN</a></li>
+                <li><a href="#"><span class="uk-margin-small-right"></span> GALLERY</a></li>
+                <li><a href="#"><span class="uk-margin-small-right"></span> TENTANG KAMI</a></li>
+                
+                <li class="uk-nav-divider"></li>
+                
+            </ul>
+    
+        </div>
+    </div> -->
+            
+    
+        </div>
+    </nav>
+    <div id="offcanvas-nav" uk-offcanvas="mode: push; flip:true; overlay:true;">
+            <div class="canvas-hamburger uk-offcanvas-bar">
+        
+                <div class="profile-burger uk-box-shadow-large">
+                    Profile
+                    
+                </div>
+                
+        
+                <ul class="profile-burger uk-nav uk-nav-default">
+                    
+                    <li style="display: flex;margin-left: 4em"><a href="#"><img src="ICON/information.png" alt=""><h5>Hello, Annisa</h5></a></li>
+                    </li>
+                    <li class="uk-nav-header">Main Menu</li>
+                    <li><a href="#"><span class="uk-margin-small-right"></span>BERANDA</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right"></span> PEMBELAJARAN</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right"></span> GALLERY</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right"></span> TENTANG KAMI</a></li>
+                    
+                    <li class="uk-nav-divider"></li>
+                    
+                </ul>
+        
+            </div>
+        </div>
+      <div class="banner">
+        <div
+          class="uk-position-relative uk-visible-toggle uk-light"
+          tabindex="-1"
+          uk-slider='{"autoplay":true,"autoplay-interval":2000}'
+        >
+          <ul class="uk-slider-items uk-grid">
+            <li class="uk-width-4-5">
+              <div class="uk-panel">
+                <img src="ICON/bannerfix.png" alt="" />
+                <div class="uk-position-center uk-text-center">
+                  <h1 uk-slider-parallax="x: 50,-50" class="padding">
+                    Search and hire talented independent Professionals
+                  </h1>
+                  <p uk-slider-parallax="x: 200,-200">
+                    <!-- TANDA -->
+                    <div class="search uk-margin">
+                      <div class="boundary-align uk-panel uk-placeholder pencarianForms"> 
+                          <div class="uk-inline-clip">
+                                  <input id="pencarian" class="uk-input uk-form-width-medium uk-light" type="text" placeholder="Search">
+                                   
+                             <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: triangle-down"></a>
+                             </div>
+                             <div uk-dropdown="mode:click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true" style="max-width: 499.031px;">
+              
+                              <div class="uk-panel uk-panel-scrollable" style="border: none">
+              
+                                 <div class=" uk-grid dropdownViews">
+              
+                                  <div class="width-1-2@s datasearch">
+                                  <img class="dropdownImg" src="ICON/anisa.png" alt="">
+                                  </div>
+                                  <div class="width-1-2@s">
+                                      
+              
+                                  <ul class="uk-nav uk-dropdown-nav uk-text-left searchInput">
+                                              <li class="listItem">Nama : Annisa Kumalasari</li>
+                                              <li class="listItem">Profesi :Dosen</li>
+                                              <li class="listItem">Negara : Indonesia</li>
+                                              <li class="listItem">Bahasa : Inggris & Indonesia</li>
+                                              <button class="uk-button uk-button-small uk-margin-small-top btnProfil btnCard">Lihat Profil</button>
+                                          </ul>
+                                      </div>
+                                  </div>
+              
+                                  <div class=" uk-grid dropdownViews">
+              
+                                      <div class="width-1-2@s datasearch">
+                                      <img class="dropdownImg" src="ICON/anisa.png" alt="">
+                                      </div>
+                                      <div class="width-1-2@s">
+                                          
+                  
+                                      <ul class="uk-nav uk-dropdown-nav uk-text-left searchInput">
+                                                  <li class="listItem">Nama : Annisa Kumalasari</li>
+                                                  <li class="listItem">Profesi :Dosen</li>
+                                                  <li class="listItem">Negara : Indonesia</li>
+                                                  <li class="listItem">Bahasa : Inggris & Indonesia</li>
+                                                  <button class="uk-button uk-button-small uk-margin-small-top btnProfil btnCard">Lihat Profil</button>
+                                              </ul>
+                                          </div>
+                                      </div>
+                  
+              
+                                      <div class=" uk-grid dropdownViews">
+              
+                                          <div class="width-1-2@s datasearch">
+                                          <img class="dropdownImg" src="ICON/anisa.png" alt="">
+                                          </div>
+                                          <div class="width-1-2@s">
+                                              
+                      
+                                          <ul class="uk-nav uk-dropdown-nav uk-text-left searchInput">
+                                                      <li class="listItem">Nama : Annisa Kumalasari</li>
+                                                      <li class="listItem">Profesi :Dosen</li>
+                                                      <li class="listItem">Negara : Indonesia</li>
+                                                      <li class="listItem">Bahasa : Inggris & Indonesia</li>
+                                                      <button class="uk-button uk-button-small uk-margin-small-top btnProfil btnCard">Lihat Profil</button>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                      
+              
+                              </div>
+                                 
+                  
+                              </div>
+                          </div>
+              
+              
+                               <div class="uk-grid uk-align-center">
+                                  <h5 class="uk-text-bold uk-margin-medium-bottom loginAs">Login as</h5>
+                            <a href="#login" uk-toggle>  <button class="uk-button uk-button-default uk-width-1-4  button1 uk-text-bold loginTxt" >Company</button></a>
+                           <a href="#loginsiswa" uk-toggle>   <button class="uk-button uk-button-default uk-width-1-4 button1 uk-margin-medium-left uk-text-bold loginTxt">Student</button></a>
+                              </div>
+                      </div>  
+                  
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="uk-width-4-5">
+              <div class="uk-panel">
+                <img src="ICON/photo2.jpg" alt="" />
+                <div class="uk-position-center uk-text-center">
+                  <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                  <p uk-slider-parallax="x: 200,-200">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="uk-width-4-5">
+              <div class="uk-panel">
+                <img src="ICON/photo3.jpg" alt="" />
+                <div class="uk-position-center uk-text-center">
+                  <h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+                  <p uk-slider-parallax="x: 200,-200">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </li>
+           
+          </ul>
+
+          <a
+            class="uk-position-center-left sliderleft uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-previous
+            uk-slider-item="previous"
+          ></a>
+          <a
+            class="uk-position-center-right sliderright uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-next
+            uk-slider-item="next"
+          ></a>
+        </div>
+      </div>
+
+      <!-- END BAGIAN BANNER -->
+
+
+      <!-- START CONTENT -->
+      <section class="uk-section uk-section-info uk-preserve-color sec-a">
+        <div class="uk-container" >
+            <div class="uk-grid-match uk-child-width-expand@lg" uk-grid uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-bottom-center; target: .uk-card; delay: 250; repeat: true" >
+                
+    
+                <div>
+                        
+                    <!-- konten -->
+                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                    <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                        <img class="imgView" src="dunia.png">
+                        <h3>Search a Job</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+    
+                    <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                    <div>
+                        <button class="btnClick uk-button uk-button-secondary uk-align-center"><a class="aBtn" href="#dalam" uk-toggle>Dalam Negeri</a></button>
+                        
+                        <button class="btnClick uk-button uk-button-secondary uk-align-center"><a class="aBtn" href="#luarnegeri" uk-toggle>Luar Negeri</a></button>
+                    </div>
+    
+    
+    
+                </div>
+    
+                    </div>
+                    <!-- end konten -->
+    
+                </div>
+    
+    
+                         <div>
+                                <!-- konten -->
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <a href="#">
+                                <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                                    <img class="imgView" src="graduation.png">
+                                            <h3>Study</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        </div>
+    
+                                        <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                                        <p>
+                                            
+                                           
+                                        </p>
+                                    </div>
+                                </a>
+                                </div>
+                                <!-- end konten -->
+                        </div>
+    
+                  <div>
+                    <!-- konten -->
+                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                        <a href="#">
+                    <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                        <img class="imgView" src="menara.png">
+                        <h3>Search a Job</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+    
+                    <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                    <p>
+                        
+                        
+                    </p>
+                </div>
+                    </a>
+                    </div>
+                    <!-- end konten -->
+                </div>
+    
+    
+            </div>
+        </div>
+       
+    
+    
+    </div> 
+    <!-- END CONTENT KOLOM -->
+
+
+    <!-- START SECTION 2 -->
+<div class="sec-b uk-background-cover@s">
+  
+  <h2 class="center" >(Your Company) Menawarkan anda lebih banyak
+    lowongan Pekerjaan dari berbagai negara</h2>
+  <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid style="background:none; box-shadow: none;">
+ 
+      <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+          <img src="content.jpg" alt="Figure-1" uk-cover style="width: 533px;height: 344px;" >
+          <canvas width="500" height="400"></canvas>
+      </div>
+      <div>
+          <div class="uk-card-body">
+              <h3 class="uk-card-title">Butuh pekerjaan?</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
+                a type specimen book. It has survived not only five centuries,</p>
+          </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- END SECTION 2 -->
+
+  <!-- START SECTION 3 -->
+  <!-- START CONTENT AKHIR -->
+
+
+
+<div class="uk-position-relative uk-visible-toggle uk-dark uk-margin-medium-top uk-background-image@s bgsvg2" id="" tabindex="-1" uk-slider>
+  <h2 class="h2Custom uk-text-center">Lowongan kerja terbaru</h2>
+
+<ul class="sliderul uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@xl uk-text-center " uk-grid uk-scrollspy="cls: uk-animation-slide-top; target: .uk-card; delay: 100; repeat: true">
+  <li>
+    <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover wadah" id="card-animate" >
+        <img class="imgCards" src="mcd.png">
+        <h4 class="headCards"><strong>McDonalds</strong></h4>
+        <hr  style="margin-top:-10px;">
+        <p class="uk-text-danger jobCards">Marketing</p>
+        <div class="pCards comment more" style="margin-top: -10px;">Memiliki Komunikasi skill yang baik Memiliki pengetahuan product 
+            marketing memiliki bakat jurusan rasenggan shurikken
+        </div>
+        </p>
+        <hr  style="margin-top:-10px;">
+        <div class="divCards" uk-grid>
+        <img class="cardIcon" src="ICON/loc2.png" alt="location">
+        <span class="cardCapt">Medan</span>
+        </div>
+        <div style="margin-top:10px;" uk-grid>
+        <img class="dollarIcon" src="ICON/cash4.png" alt="dollars">
+        <span class="cardCapt"><a href="_blank"><strong>Login</strong></a> untuk lihat gaji</span>
+        </div>
+        <p>
+            <button class="uk-button uk-button-danger uk-button-small btnCard">Lamar</button>
+            <button class="uk-button uk-button-primary uk-button-small btnCard">Lihat</button>
+        </p>
+
+    </div>
+</li>
+<li>
+  <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover wadah" id="card-animate" >
+      <img class="imgCards" src="mcd.png">
+      <h4 class="headCards"><strong>McDonalds</strong></h4>
+      <hr  style="margin-top:-10px;">
+      <p class="uk-text-danger jobCards">Marketing</p>
+      <div class="pCards comment more" style="margin-top: -10px;">Memiliki Komunikasi skill yang baik Memiliki pengetahuan product 
+          marketing memiliki bakat jurusan rasenggan shurikken
+      </div>
+      </p>
+      <hr  style="margin-top:-10px;">
+      <div class="divCards" uk-grid>
+      <img class="cardIcon" src="ICON/loc2.png" alt="location">
+      <span class="cardCapt">Medan</span>
+      </div>
+      <div style="margin-top:10px;" uk-grid>
+      <img class="dollarIcon" src="ICON/cash4.png" alt="dollars">
+      <span class="cardCapt"><a href="_blank"><strong>Login</strong></a> untuk lihat gaji</span>
+      </div>
+      <p>
+          <button class="uk-button uk-button-danger uk-button-small btnCard">Lamar</button>
+          <button class="uk-button uk-button-primary uk-button-small btnCard">Lihat</button>
+      </p>
+
+  </div>
+</li>
+<li>
+  <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover wadah" id="card-animate" >
+      <img class="imgCards" src="mcd.png">
+      <h4 class="headCards"><strong>McDonalds</strong></h4>
+      <hr  style="margin-top:-10px;">
+      <p class="uk-text-danger jobCards">Marketing</p>
+      <div class="pCards comment more" style="margin-top: -10px;">Memiliki Komunikasi skill yang baik Memiliki pengetahuan product 
+          marketing memiliki bakat jurusan rasenggan shurikken
+      </div>
+      </p>
+      <hr  style="margin-top:-10px;">
+      <div class="divCards" uk-grid>
+      <img class="cardIcon" src="ICON/loc2.png" alt="location">
+      <span class="cardCapt">Medan</span>
+      </div>
+      <div style="margin-top:10px;" uk-grid>
+      <img class="dollarIcon" src="ICON/cash4.png" alt="dollars">
+      <span class="cardCapt"><a href="_blank"><strong>Login</strong></a> untuk lihat gaji</span>
+      </div>
+      <p>
+          <button class="uk-button uk-button-danger uk-button-small btnCard">Lamar</button>
+          <button class="uk-button uk-button-primary uk-button-small btnCard">Lihat</button>
+      </p>
+
+  </div>
+</li>
+<li>
+  <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover wadah" id="card-animate" >
+      <img class="imgCards" src="mcd.png">
+      <h4 class="headCards"><strong>McDonalds</strong></h4>
+      <hr  style="margin-top:-10px;">
+      <p class="uk-text-danger jobCards">Marketing</p>
+      <div class="pCards comment more" style="margin-top: -10px;">Memiliki Komunikasi skill yang baik Memiliki pengetahuan product 
+          marketing memiliki bakat jurusan rasenggan shurikken
+      </div>
+      </p>
+      <hr  style="margin-top:-10px;">
+      <div class="divCards" uk-grid>
+      <img class="cardIcon" src="ICON/loc2.png" alt="location">
+      <span class="cardCapt">Medan</span>
+      </div>
+      <div style="margin-top:10px;" uk-grid>
+      <img class="dollarIcon" src="ICON/cash4.png" alt="dollars">
+      <span class="cardCapt"><a href="_blank"><strong>Login</strong></a> untuk lihat gaji</span>
+      </div>
+      <p>
+          <button class="uk-button uk-button-danger uk-button-small btnCard">Lamar</button>
+          <button class="uk-button uk-button-primary uk-button-small btnCard">Lihat</button>
+      </p>
+
+  </div>
+</li>
+<li>
+  <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover wadah" id="card-animate" >
+      <img class="imgCards" src="mcd.png">
+      <h4 class="headCards"><strong>McDonalds</strong></h4>
+      <hr  style="margin-top:-10px;">
+      <p class="uk-text-danger jobCards">Marketing</p>
+      <div class="pCards comment more" style="margin-top: -10px;">Memiliki Komunikasi skill yang baik Memiliki pengetahuan product 
+          marketing memiliki bakat jurusan rasenggan shurikken
+      </div>
+      </p>
+      <hr  style="margin-top:-10px;">
+      <div class="divCards" uk-grid>
+      <img class="cardIcon" src="ICON/loc2.png" alt="location">
+      <span class="cardCapt">Medan</span>
+      </div>
+      <div style="margin-top:10px;" uk-grid>
+      <img class="dollarIcon" src="ICON/cash4.png" alt="dollars">
+      <span class="cardCapt"><a href="_blank"><strong>Login</strong></a> untuk lihat gaji</span>
+      </div>
+      <p>
+          <button class="uk-button uk-button-danger uk-button-small btnCard">Lamar</button>
+          <button class="uk-button uk-button-primary uk-button-small btnCard">Lihat</button>
+      </p>
+
+  </div>
+</li>
+<li>
+  <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover wadah" id="card-animate" >
+      <img class="imgCards" src="mcd.png">
+      <h4 class="headCards"><strong>McDonalds</strong></h4>
+      <hr  style="margin-top:-10px;">
+      <p class="uk-text-danger jobCards">Marketing</p>
+      <div class="pCards comment more" style="margin-top: -10px;">Memiliki Komunikasi skill yang baik Memiliki pengetahuan product 
+          marketing memiliki bakat jurusan rasenggan shurikken
+      </div>
+      </p>
+      <hr  style="margin-top:-10px;">
+      <div class="divCards" uk-grid>
+      <img class="cardIcon" src="ICON/loc2.png" alt="location">
+      <span class="cardCapt">Medan</span>
+      </div>
+      <div style="margin-top:10px;" uk-grid>
+      <img class="dollarIcon" src="ICON/cash4.png" alt="dollars">
+      <span class="cardCapt"><a href="_blank"><strong>Login</strong></a> untuk lihat gaji</span>
+      </div>
+      <p>
+          <button class="uk-button uk-button-danger uk-button-small btnCard">Lamar</button>
+          <button class="uk-button uk-button-primary uk-button-small btnCard">Lihat</button>
+      </p>
+
+  </div>
+</li>
+  <li>
+      <img src="images/slider2.jpg" alt="">
+      <div class="uk-position-center uk-panel"><h1>7</h1></div>
+  </li>
+  <li>
+      <img src="images/slider3.jpg" alt="">
+      <div class="uk-position-center uk-panel"><h1>8</h1></div>
+  </li>
+  <li>
+      <img src="images/slider4.jpg" alt="">
+      <div class="uk-position-center uk-panel"><h1>9</h1></div>
+  </li>
+  <li>
+      <img src="images/slider5.jpg" alt="">
+      <div class="uk-position-center uk-panel"><h1>10</h1></div>
+  </li>
+</ul>
+
+<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+  <!-- END SECTION 3 -->
+  <!-- START KONTEN TESTIMONIAL -->
+  <section class=" uk-background-image@s bgsvg3">
+  <div class="testimoni uk-position-relative uk-visible-toggle uk-light uk-margin-medium-top" tabindex="-1" uk-slideshow='{"animation": "slide", "velocity" : 0.5,"autoplay":true,"autoplay-interval":2000}' style="color: black;">
+        
+    <h3 class="uk-text-center uk-text-bold"  style="color: #333;">Testimonial</h3>
+    <ul class="testimoniul uk-slideshow-items uk-text-center" >
+            
+        <li>
+
+            <img src="ICON/testimonial.png" alt="">
+            <h5 class="testiName" style="color: #333; margin-top: 10px;">Lutfi Surachman</h5>
+            <p>" Terima Kasih dengan adanya website ini saya lebih mudah untuk mendapatkan <br> perkerja dengan sesuai di bidang sayas "</p>
+        </li>
+        <li>
+            <img src="ICON/testimonial.png" alt="">
+            <h5 class="testiName" style="color: #333; margin-top: 10px;">Lutfi Surachman</h5>
+            <p>" Terima Kasih dengan adanya website ini saya lebih mudah untuk mendapatkan <br> perkerja dengan sesuai di bidang sayas "</p>
+        </li>
+        <li>
+            <img src="ICON/testimonial.png" alt="">
+            <h5 class="testiName" style="color: #333; margin-top: 10px;">Lutfi Surachman</h5>
+            <p>" Terima Kasih dengan adanya website ini saya lebih mudah untuk mendapatkan <br> perkerja dengan sesuai di bidang sayas "</p>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left sliderleft2 uk-position-small uk-hidden-hover" href="#"  uk-slideshow-item="previous"style="color: black"><i class="fas fa-arrow-left fa-2x"></i></a>
+    <a class="uk-position-center-right slideright2 uk-position-small uk-hidden-hover" href="#"  uk-slideshow-item="next"style="color: black"><i class="fas fa-arrow-right fa-2x"></i></a>
+    
+
+</div>
+</section>
+<!-- END KONTEN TESTIMONIAL -->
+
+
+                                    <!-- START MODAL GROUP -->
+                                    
+                                    <div id="luarnegeri" class="uk-modal-container1" uk-modal>
+                                      <div class="uk-modal-dialog uk-modal-body" style="background-image: url(ICON/luarnegeri.png);">
+                                          <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+                                          <h3 class="uk-text-center "><strong>Luar Negeri</strong></h3>
+              
+                                          <div class="uk-column-1-2@s uk-column-1-3@m uk-column-1-4@l uk-align-center uk-text-center uk-padding-large"> 
+                                              <ul style="list-style-type: none;text-decoration-style: none;">
+                                                  <a href="#europa" uk-toggle> 
+                                                  <li class="uk-button-text">
+                                                      <img src="ICON/europa.png">
+                                                  <h4><strong>Europa</strong></h4>
+                                                  <p>Dapatkan lebih banyak lowongan pekerjaan dari berbagai negara di europa</p>
+                                                      
+                                                  </li>
+                                                  </a>
+                                                  <a href="#asia" uk-toggle>
+                                                  <li class="uk-button-text">
+                                                      <img src="ICON/asia.png">
+                                                  <h4><strong>Asia</strong></h4>
+                                                  <p>Dapatkan lebih banyak lowongan pekerjaan dari berbagai negara di Asia</p>
+                                                  </li>
+                                              </a>
+                                                  <a href="">
+                                                  <li class="uk-button-text">
+                                                      <img src="ICON/australia.png">
+                                                  <h4><strong>Australia</strong></h4>
+                                                  <p>Dapatkan lebih banyak lowongan pekerjaan dari berbagai negara di Australia</p>
+              
+                                                  </li>
+                                              </a>
+                                              <a href="">
+                                                  <li class="uk-button-text">
+                                                      
+                                                      <img src="ICON/amerika.png">
+                                                  <h4><strong>Amerika</strong></h4>
+                                                  <p>Dapatkan lebih banyak lowongan pekerjaan dari berbagai negara di Amerika</p>
+                                                  </li>
+                                              </a>
+                                              </ul>
+                                         
+              
+                                          </div>
+                                         
+                                        
+              
+                                  </div>
+                              </div>
+                          
+                              <!-- END MODAL GROUP -->
+              
+                              <!-- START MODAL GROUP 2-->
+                                                  
+                                                  <div id="europa" class="uk-modal-container2" uk-modal>
+                                      <div class="uk-modal-dialog uk-modal-body" >
+                                          <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+                                          <h4 class="uk-text-center"><strong>Europa</strong></h4>
+                                        
+                                        
+                                          <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+                                  <div class="uk-slider-container">
+              
+                                                      <ul class="slider-bendera uk-slider-items uk-grid">
+                                                          <li>
+                                                              
+                                                                <img src="ICON/flag/europa/germany.png" alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Germany</h3>
+                                                              </div><!-- <div class="uk-position-center uk-panel">
+                                                                
+              
+                                                              </div> -->
+                                                          </li>
+                                                          <li>
+                                                             <img src="ICON/flag/europa/italy.png" alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Italy</h3>
+                                                              </div>
+                                                          </li>
+                                                          <li>
+                                                              <img src="ICON/flag/europa/spain.png" alt="">
+                                                              <div>
+                                                                <h3  class="uk-text-bold" style="color: black ;text-align: center; ">Spanyol</h3>
+                                                              </div>
+                                                          </li>
+                                                          <li>
+                                                              <img src="ICON/flag/europa/france.png" calt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center; ">France</h3>
+                                                              </div>
+                                                          </li>
+                                                          <li>
+                                                            <img src="ICON/flag/europa/austria.png"  alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center; ">Austria</h3>
+                                                              </div>
+                                                          </li>
+                                                          <li>
+                                                              <img src="ICON/flag/europa/belgium.png" alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center; ">Belgium</h3>
+                                                              </div>
+                                                          </li>
+                                                           <li>
+                                                              <img src="ICON/flag/europa/belgium.png" alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center; ">Belgium</h3>
+                                                              </div>
+                                                          </li>
+                                                           <li>
+                                                              <img src="ICON/flag/europa/belgium.png" alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center; ">Belgium</h3>
+                                                              </div>
+                                                          </li>
+                                                           <li>
+                                                              <img src="ICON/flag/europa/belgium.png" alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center; ">Belgium</h3>
+                                                              </div>
+                                                          </li>
+              
+                                                          
+                                                      </ul>
+              
+                                                      <a class="uk-position-center-left uk-position-small " href="#"  uk-slider-item="previous"><i class="fas fa-arrow-circle-left fa-2x" style="color: black;"></i></a>
+                                                      <a class="uk-position-center-right uk-position-small " href="#" uk-slider-item="next"><i class="fas fa-arrow-circle-right fa-2x" style="color: black;"></i></a>
+              
+                                                  </div>
+              
+                                                  </div>
+                                                    
+                                  
+                                    
+                                  </div> 
+                              </div>
+                          
+                              <!-- END MODAL GROUP  2-->
+              
+                                 <!-- START MODAL GROUP 2-->
+                                                  
+                                                  <div id="asia" class="uk-modal-container2" uk-modal>
+                                      <div class="uk-modal-dialog uk-modal-body" >
+                                          <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+                                          <h4 class="uk-text-center"><strong>Europa</strong></h4>
+                                        
+                                        
+                                          <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+                                  <div class="uk-slider-container">
+              
+                                                      <ul class="slider-bendera uk-slider-items uk-grid">
+                                                         
+                                                          <li>
+                                                         <a href="#japan" uk-toggle>     
+                                                                <img src="ICON/flag/asia/japan.png" alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Japan</h3>
+                                                              </div><!-- <div class="uk-position-center uk-panel">
+                                                                
+                                                          
+                                                              </div> -->
+                                                              </a>
+                                                          </li>
+                                                          <li>
+                                                             <img src="ICON/flag/asia/korea.png" alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center;">Korea</h3>
+                                                              </div>
+                                                          </li>
+                                                          <li>
+                                                              <img src="ICON/flag/asia/malaysia.png" alt="">
+                                                              <div>
+                                                                <h3  class="uk-text-bold" style="color: black ;text-align: center; ">Malaysia</h3>
+                                                              </div>
+                                                          </li>
+                                                          <li>
+                                                              <img src="ICON/flag/asia/singapore.png" calt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center; ">Singapore</h3>
+                                                              </div>
+                                                          </li>
+                                                          <li>
+                                                            <img src="ICON/flag/asia/thailand.png"  alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center; ">Thailand</h3>
+                                                              </div>
+                                                          </li>
+                                                          <li>
+                                                              <img src="ICON/flag/asia/vietnam.png" alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center; ">Vietnam</h3>
+                                                              </div>
+                                                          </li>
+                                                           <li>
+                                                              <img src="ICON/flag/asia/vietnam.png" alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center; ">Vietnam</h3>
+                                                              </div>
+                                                          </li>
+                                                           <li>
+                                                              <img src="ICON/flag/asia/vietnam.png" alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center; ">Vietnam</h3>
+                                                              </div>
+                                                          </li>
+                                                           <li>
+                                                              <img src="ICON/flag/asia/vietnam.png" alt="">
+                                                              <div>
+                                                                <h3 class="uk-text-bold" style="color: black ;text-align: center; ">Vietnam</h3>
+                                                              </div>
+                                                          </li>
+              
+                                                          
+                                                      </ul>
+              
+                                                      <a class="uk-position-center-left uk-position-small " href="#"  uk-slider-item="previous"><i class="fas fa-arrow-circle-left fa-2x" style="color: black;"></i></a>
+                                                      <a class="uk-position-center-right uk-position-small " href="#" uk-slider-item="next"><i class="fas fa-arrow-circle-right fa-2x" style="color: black;"></i></a>
+              
+                                                  </div>
+              
+                                                  </div>
+                                                    
+                                  
+                                    
+                                  </div> 
+                              </div>
+                          
+                              <!-- END MODAL GROUP  2-->
+              
+              
+                              <!-- START MODAL GROUP -->
+                                                  
+                                                  <div id="japan" class="uk-modal-container8" uk-modal>
+                                      <div class="uk-modal-dialog uk-modal-body">
+                                          <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+                                          <h2 class="uk-text-center "><strong>JAPAN</strong></h2>
+              
+                                          <div class="uk-column-1-2@s uk-column-1-3@m uk-column-1-4@l uk-align-center uk-text-center uk-padding-large"> 
+                                              <ul class="japan-modal">
+                                                  <a href="#" uk-toggle> 
+                                                  <li class="uk-button-text">
+                                                      <img src="ICON/social-care.png">
+                                                  <h4><strong>Tokutei Ginou</strong></h4>
+                                                  
+                                                      
+                                                  </li>
+                                                  </a>
+                                                  <a href="">
+                                                  <li class="uk-button-text">
+                                                      <img src="ICON/team.png">
+                                                  <h4><strong>Work</strong></h4>
+                                                  
+                                                  </li>
+                                              </a>
+                                                  <a href="">
+                                                  <li class="uk-button-text">
+                                                      <img src="ICON/enterprise.png">
+                                                  <h4><strong>Magang</strong></h4>
+                                                  <p>
+              
+                                                  </li>
+                                              </a>
+                                              <a href="">
+                                                  <li class="uk-button-text">
+                                                      
+                                                      <img src="ICON/technical-support.png">
+                                                  <h4><strong>Engginering</strong></h4>
+                                                  <p>
+                                                  </li>
+                                              </a>
+                                              </ul>
+                                         
+              
+                                          </div>
+                                         
+                                        
+              
+                                  </div>
+                              </div>
+                          
+                              <!-- END MODAL GROUP -->
+
+                              
+                                    <!-- START MODAL Login -->
+                                    
+                    <div id="login" class="uk-modal-container3" uk-modal>
+                      <div class="uk-modal-dialog uk-modal-body uk-float-center" style="background-image: url(ICON/login.png);">
+                          <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+                          <h2 class="uk-text-center "><strong>Your Company</strong></h2>
+                         
+                          <div class="uk-child-width-expand@s uk-text-center uk-flex-column" uk-grid>
+
+                              <div class="uk-container uk-text-center uk-margin uk-padding-large " >
+                                  <h4 class="uk-text-left"><strong>Sign In</strong></h4><br>
+                                  <form>
+
+                                              
+                                   <input class="uk-input uk-form-width-xlarge uk-margin-small-bottom" type="text" placeholder="Username/Email">
+                                    <input class="uk-input uk-form-width-xlarge uk-margin-small-bottom" type="text" placeholder="Password">
+                                    <button class="uk-button uk-button-primary uk-border-rounded   uk-width-1-1 uk-margin-small-bottom"><strong>Login</strong></button>    
+                              
+                                    </form>  
+
+                                      
+                                      <a href="#signup" uk-toggle><p class="uk-align-left">Buat Akun</p></a>
+                                      <a href=""><p class="uk-align-right">Forget Password</p></a>
+
+                                        
+                                      <h5 class="uk-text-center  uk-text-bold uk-margin-large-top ">Login With</h5>
+                                      <p class="uk-align-center"><a href=""><img class="uk-margin-small-right" src="ICON/twitter.png"></a><a href=""><img src="ICON/facebook.png"></a><a href=""><img class="uk-margin-small-left" src="ICON/google.png"></a></p>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- END MODAL LOGIN -->
+
+
+                                  <!-- START MODAL Login -->
+                                  
+                                  <div id="loginsiswa" class="uk-modal-container3" uk-modal>
+                      <div class="uk-modal-dialog uk-modal-body uk-float-center" style="background-image: url(ICON/login.png);">
+                          <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+                          <h2 class="uk-text-center "><strong>As Student</strong></h2>
+                         
+                          <div class="uk-child-width-expand@s uk-text-center uk-flex-column" uk-grid>
+
+                              <div class="uk-container uk-text-center uk-margin uk-padding-large " >
+                                  <h4 class="uk-text-left"><strong>Sign In</strong></h4><br>
+                                  <form>
+
+                                              
+                                   <input class="uk-input uk-form-width-xlarge uk-margin-small-bottom" type="text" placeholder="Username/Email">
+                                    <input class="uk-input uk-form-width-xlarge uk-margin-small-bottom" type="text" placeholder="Password">
+                                    <button class="uk-button uk-button-primary uk-border-rounded   uk-width-1-1 uk-margin-small-bottom"><strong>Login</strong></button>    
+                              
+                                    </form>  
+
+                                      
+                                      <a href="#signup" uk-toggle><p class="uk-align-left">Buat Akun</p></a>
+                                      <a href=""><p class="uk-align-right">Forget Password</p></a>
+
+                                        
+                                      <h5 class="uk-text-center  uk-text-bold uk-margin-large-top ">Login With</h5>
+                                      <p class="uk-align-center"><a href=""><img class="uk-margin-small-right" src="ICON/twitter.png"></a><a href=""><img src="ICON/facebook.png"></a><a href=""><img class="uk-margin-small-left" src="ICON/google.png"></a></p>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- END MODAL LOGIN -->
+
+
+
+
+                                  <!-- START MODAL SIGN UP -->
+                                  
+                                  <div id="signup" class="uk-modal-container4" uk-modal>
+                      <div class="uk-modal-dialog uk-modal-body" style="background-image: url(ICON/signup.png);">
+                          <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+                          <h2 class="uk-text-center uk-margin-large-bottom"><strong>Your Company</strong></h2>
+                         
+                          <div class="uk-child-width-expand@s uk-text-center uk-flex-column" uk-grid>
+
+                              <div class="uk-container uk-text-center uk-margin uk-padding-large ">
+                                  <h4 class="uk-float-left"><strong>Sign Up</strong></h4><br>
+                                  <form>
+
+                                  <input class="uk-input uk-form-width-xlarge uk-margin-medium-bottom" type="text" placeholder="Nama">      
+                                   <input class="uk-input uk-form-width-xlarge uk-margin-medium-bottom" type="text" placeholder="Email">
+                                   <input class="uk-input uk-form-width-xlarge uk-margin-medium-bottom" type="text" placeholder="Password">
+                                    <input class="uk-input uk-form-width-xlarge uk-margin-small-bottom" type="text" placeholder="Confirm Password">
+                                    </form>  
+
+
+                                        <button class="uk-button uk-button-primary uk-border-rounded   uk-width-1-1 uk-margin-small-bottom"><strong>Sign Up</strong></button>    
+                              
+                                      <h5 class="uk-text-center uk-text-bold ">Login With</h5>
+                                      <p><a href=""><img class="uk-margin-small-right" src="ICON/twitter.png"></a><a href=""><img src="ICON/facebook.png"></a><a href=""><img class="uk-margin-small-left" src="ICON/google.png"></a></p>
+                              </div>
+
+
+                             
+                              
+
+
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- END MODAL SIGNUP -->
+
+
+
+
+
+
+                                  <!-- START MODAL SIGN UP -->
+                                  
+                                  <div id="dalam" class="uk-modal-container7" uk-modal>
+                      <div class="uk-modal-dialog uk-modal-body" style="background-image: url(ICON/signup.png);">
+                          <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
+                          
+                         
+                          <div class="uk-child-width-expand@s uk-text-center uk-flex-column" uk-grid>
+
+                              <div class="uk-container uk-text-center uk-margin uk-padding-large ">
+                                  <h2>Dalam Negeri</h2>
+                                  <div class="uk-inline-clip">
+                                          <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: search" style="width: 20%;"></a>
+                                          <input class="uk-input" placeholder="Cari Kota..." type="text" style="border-radius: 18px;">
+                                      </div>
+
+                                      <div class="uk-panel uk-panel-scrollable uk-align-center uk-text-left" style="width:70%;background-color: #f3f3f3;height: 347px;border: none">
+                                              <ul class="uk-list">
+                                                  <li>Ambon</li>
+                                                  <li>Bali</li>
+                                                  <li>Balikpapan</li>
+                                                  <li>Bandung</li>
+                                                  <li>Bangil</li>
+                                                  <li>Banjarmasin</li>
+                                                  <li>Banyuwangi</li>
+                                                  <li>Batang</li>
+                                                  <li>Bengkulu</li>
+                                                  <li>Biak Mokmer</li>
+                                                  <li>Bima</li>
+                                                  <li>Binjai</li>
+
+                                              </ul>
+
+                                          </div>
+                              </div>
+
+
+                             
+                              
+
+
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- END MODAL SIGNUP -->
+              
+  
+  
+  <!-- FOOTER -->
+	<div class="main">
+		<div class="content">
+			<div class="footer-grids">
+				<div class="footer one">
+					<h3>More About Company</h3>
+					<p> Nemo enim ipsam voluptatem quia
+					voluptas sit aspernatur aut odit aut fugit, 
+					sed quia consequuntur magni dolores eos qui 
+					ratione voluptatem sequi nesciunt.</p>
+					<p class="adam">- Patrick Victoria, CEO</p>
+					<div class="clear"></div>
+				</div>
+				<div class="footer two">
+					<h3>Keep Connected</h3>
+					<ul>
+						<li><a class="fb" href="#"><i></i>Like us on Facebook</a></li>
+						<li><a class="fb1" href="#"><i></i>Follow us on Twitter</a></li>
+						<li><a class="fb2" href="#"><i></i>Add us on Google Plus</a></li>
+						<li><a class="fb3" href="#"><i></i>Follow us on Dribbble</a></li>
+						<li><a class="fb4" href="#"><i></i>Follow us on Pinterest</a></li>
+					</ul>
+				</div>
+				<div class="footer three">
+					<h3 class="center">Find us here</h3>
+					<ul>
+						<!-- <li>The company name <span>Lorem ipsum dolor,</span>Glasglow Dr 40 Fe 72.  </li>
+						<li>1234567890  </li>
+            <li><a href="mailto:info@example.com">contact@example.com</a> </li> -->
+            <li class="">
+              <div class="uk-container-xs test">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.0901403041134!2d110.35879085056918!3d-7.6734582944408825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5f09f992530d%3A0xf844f58d4e3556ab!2sLPK%20HIGLOB!5e0!3m2!1sid!2sid!4v1580201582435!5m2!1sid!2sid" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </li>
+          </div>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="copy-right-grids">
+				<div class="copy-left">
+						<p class="footer-gd">© 2020 Your Company All Rights Reserved </p>
+				</div>
+				<div class="copy-right">
+					<ul>
+						<li><a href="#">Company Information</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+  </div>	
+</div>	
+  <!-- END FOOTER -->
+
+      <!-- JQUERY musti dirubah ke offline ini msih cdn -->
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous"></script>
+      <!-- <script src="js/jquery.shorten.js"></script> -->
+
+      <script>
+          $(document).ready(function() {
+              var showChar = 30;
+              var ellipsestext = " ...";
+              var moretext = "less";
+              var lesstext = "more";
+              $('.more').each(function() {
+                  var content = $(this).html();
+          
+                  if(content.length > showChar) {
+          
+                      var c = content.substr(0, showChar);
+                      var h = content.substr(showChar-1, content.length - showChar);
+          
+                      var html = c + '<span class="moreelipses">'+ellipsestext+'</span>&nbsp;<span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">'+moretext+'</a></span>';
+          
+                      $(this).html(html);
+                  }
+          
+              });
+          
+              $(".morelink").click(function(){
+                  if($(this).hasClass("less")) {
+                      $(this).removeClass("less");
+                      $(this).html(moretext);
+                  } else {
+                      $(this).addClass("less");
+                      $(this).html(lesstext);
+                  }
+                  $(this).parent().prev().toggle();
+                  $(this).prev().toggle();
+                  return false;
+              });
+          });
+          </script>
+  </body>
+</html>

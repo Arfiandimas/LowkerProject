@@ -104,7 +104,7 @@ table {
   z-index: -1;
 }
 
-#bg-svg {
+/* #bg-svg {
   background: url("ICON/bg/Polygon17.svg") no-repeat;
   background-size: cover;
   background-position-x: -75em;
@@ -123,7 +123,7 @@ table {
   background-size: cover;
   background-position-y: -45em;
   background-position-x: -105em;
-}
+} */
 
 /* #bgsvg3 img {
   transform: rotate(-20deg);
@@ -147,8 +147,9 @@ table {
 
 .search {
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: 100%;
+  text-align: center;
 }
 
 #pencarian {
@@ -185,13 +186,9 @@ table {
   color: black;
 }
 
-.search {
-  text-align: center;
-}
-
-#section-a {
+/* #section-a {
   height: 553px;
-}
+} */
 #section-b {
   height: 384px;
 }
@@ -312,6 +309,24 @@ footer a {
   color: #333;
 }
 
+a {
+  color: #0254eb;
+}
+a:visited {
+  color: #0254eb;
+}
+
+.comment {
+  width: auto;
+}
+a.morelink {
+  text-decoration: none;
+  outline: none;
+}
+.morecontent span {
+  display: none;
+}
+
 /* RESPONSIVE PLAYS */
 @media (max-width: 1199px) and (min-width: 992px) {
   /* IPAD TIDUR */
@@ -333,14 +348,29 @@ footer a {
 
 @media (max-width: 479px) {
   /* ANDROID BERDIRI */
+  p {
+    font-size: 0.9em;
+  }
+
+  .h2Custom {
+    font-size: 1.2rem;
+  }
+
   /* ===========NAVBAR============= */
   .uk-h2,
   h2 {
     font-size: 1rem;
   }
+
+  .uk-navbar-item,
+  .uk-navbar-nav > li > a,
+  .uk-navbar-toggle {
+    min-height: 0;
+  }
+
   /* ===========BACKGROUND IMG============= */
   .bg-image {
-    height: 22vh;
+    height: 32vh;
   }
   .uk-h1,
   h1 {
@@ -349,8 +379,163 @@ footer a {
   }
   .judul {
     margin-top: 0;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
   }
+
+  #pencarian {
+    height: 21px;
+    font-size: 10px;
+  }
+
+  .loginAs {
+    font-size: 11px;
+  }
+
+  .search {
+    top: 22%;
+  }
+
+  .loginTxt {
+    background-color: #b22323 !important;
+    color: #ffffff;
+    font-size: 10px;
+  }
+
+  .uk-button {
+    padding: 5px;
+    line-height: 10px;
+  }
+
+  .uk-grid > * {
+    padding-left: 0;
+  }
+
+  .uk-grid {
+    margin-left: 0;
+  }
+
+  .uk-margin-medium-bottom {
+    margin-bottom: 10px !important;
+  }
+
+  * + [class*="uk-align"] {
+    margin-top: 10px;
+  }
+
+  .uk-form-icon {
+    width: 33px;
+  }
+
+  .pencarianForms {
+    margin: auto;
+    padding: 0;
+    width: 75%;
+    border: none;
+  }
+
+  .dropdownViews {
+    display: -webkit-inline-box;
+  }
+
+  .uk-dropdown {
+    padding: 0;
+  }
+
+  .dropdownImg {
+    width: 75px;
+  }
+
+  .searchInput {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .btnProfil {
+    background-color: #0088ff;
+    color: white;
+    font-size: 10px;
+  }
+
+  .listItem {
+    margin: 2px;
+  }
+
+  .uk-margin-small-top {
+    margin-top: 3px !important;
+  }
+
+  /* ==================LIST VIEW======================  */
+
+  .uk-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .imgView {
+    width: 30%;
+  }
+  /* ==================ONCLICK LIST VIEW======================  */
+  .btnClick {
+    text-transform: capitalize;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #707070;
+    height: 38px;
+    width: 250px;
+  }
+
+  .aBtn {
+    color: white;
+  }
+
+  /*==========================CARD LOWKER===========================*/
+
+  .imgCards {
+    width: 14vh;
+  }
+
+  .headCards {
+    margin-top: 15px;
+    font-size: 1em;
+  }
+
+  .jobCards {
+    margin-top: -10px;
+    font-size: 0.9em;
+  }
+
+  .pCards {
+    font-size: 0.8em;
+  }
+
+  .divCards {
+    margin-top: -10px;
+  }
+
+  .cardIcon {
+    width: 2vh;
+  }
+
+  .dollarIcon {
+    width: 2.5vh;
+  }
+
+  #card-animate {
+    padding: 20px 25px;
+  }
+
+  .wadah {
+    margin: 0 5px;
+  }
+
+  .cardCapt {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+
+  .btnCard {
+    font-size: 0.7em;
+  }
+
+  /*==========================TESTIMONIAL===========================*/
 }
-/* 
-terakhir sampai searchbar dan daftar sebagai. */
