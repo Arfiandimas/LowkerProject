@@ -2,12 +2,24 @@ a {
   text-decoration: none !important;
 }
 
+/* UKURAN BANNER */
+.uk-width-4-5 {
+  width: 70%;
+}
+.gridspan {
+  padding-left: 15px;
+}
 /* SEARCH PROPERTY */
 .uk-placeholder {
   margin-bottom: 0;
   padding: 30px 30px;
   background: 0 0;
   border: none;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.5vh;
 }
 
 .sliderul {
@@ -18,8 +30,15 @@ a {
   width: 500px;
 }
 
+.uk-position-center {
+  top: 65%;
+}
 .center {
   text-align: center;
+}
+
+.dropdwn {
+  max-width: 499.031px;
 }
 
 /* .uk-container {
@@ -236,6 +255,10 @@ p.adam {
   }
 }
 @media (max-width: 1366px) {
+  .uk-position-center {
+    top: 55%;
+  }
+
   .footer.one {
     width: 38%;
   }
@@ -254,6 +277,23 @@ p.adam {
 }
 
 @media (max-width: 1080px) {
+  /* ========================PROPERTY URUT======================== */
+  .padding {
+    font-size: 3vh;
+  }
+  .dropdwn {
+    max-width: 401.031px;
+    left: 180.492px;
+  }
+
+  [class*="uk-dropdown-bottom"] {
+    margin-top: -20px;
+  }
+
+  .uk-form-width-medium {
+    width: 400px;
+  }
+
   .content {
     width: 100%;
   }
@@ -288,6 +328,19 @@ p.adam {
   }
 }
 @media (max-width: 1024px) {
+  /* ========================PROPERTY URUT======================== */
+  .padding {
+    font-size: 3vh;
+  }
+  .dropdwn {
+    max-width: 401.031px;
+    left: 180.492px;
+  }
+
+  [class*="uk-dropdown-bottom"] {
+    margin-top: -20px;
+  }
+
   .footer-grids {
     padding: 2em 2em;
   }
@@ -300,6 +353,19 @@ p.adam {
   }
 }
 @media (max-width: 991px) {
+  /* ========================PROPERTY URUT======================== */
+  .padding {
+    font-size: 3vh;
+  }
+  .dropdwn {
+    max-width: 401.031px;
+    left: 180.492px;
+  }
+
+  [class*="uk-dropdown-bottom"] {
+    margin-top: -20px;
+  }
+
   .footer.two {
     width: 27%;
     margin: 0 5%;
@@ -308,7 +374,109 @@ p.adam {
     width: 25%;
   }
 }
+
+@media (max-width: 910px) {
+  /* ========================PROPERTY URUT======================== */
+  .padding {
+    font-size: 3vh;
+  }
+  .dropdwn {
+    max-width: 401.031px;
+    left: 180.492px;
+  }
+
+  [class*="uk-dropdown-bottom"] {
+    margin-top: -20px;
+  }
+
+  .footer.two {
+    width: 27%;
+    margin: 0 5%;
+  }
+  .footer.three {
+    width: 25%;
+  }
+  .uk-placeholder {
+    margin-bottom: 0;
+    padding: 0;
+    background: 0 0;
+    border: none;
+  }
+}
+
+@media (max-width: 890px) {
+  /* ========================PROPERTY URUT======================== */
+  .padding {
+    font-size: 2.7vh;
+  }
+
+  .uk-placeholder {
+    margin-bottom: 0;
+    padding: 0;
+    background: 0 0;
+    border: none;
+  }
+  .dropdwn {
+    max-width: 401.031px;
+    left: 180.492px;
+  }
+
+  [class*="uk-dropdown-bottom"] {
+    margin-top: 5px;
+  }
+
+  .content {
+    width: 100%;
+  }
+  .footer.one p {
+    font-size: 13px;
+  }
+  .footer.two ul li {
+    font-size: 13px;
+  }
+  .footer.three ul li {
+    font-size: 13px;
+  }
+  .footer.three ul li:nth-child(1),
+  .footer.three ul li:nth-child(2),
+  .footer.three ul li a {
+    /* padding-left: 32px; */
+  }
+  .footer h3 {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 800px) {
+  /* ========================PROPERTY URUT======================== */
+  .padding {
+    font-size: 3vh;
+  }
+
+  .uk-form-width-medium {
+    width: 250px;
+  }
+
+  .uk-button {
+    font-size: 0.675rem;
+    line-height: 25px;
+  }
+
+  .uk-placeholder {
+    margin-bottom: 0;
+    padding: 0;
+    background: 0 0;
+    border: none;
+  }
+  .dropdwn {
+    max-width: 401.031px;
+    left: 180.492px;
+  }
+
+  [class*="uk-dropdown-bottom"] {
+    margin-top: 5px;
+  }
+
   .content {
     width: 100%;
   }
@@ -331,6 +499,25 @@ p.adam {
   }
 }
 @media (max-width: 768px) {
+  .padding {
+    font-size: 2.5vh;
+  }
+
+  .uk-placeholder {
+    margin-bottom: 0;
+    padding: 0;
+    background: 0 0;
+    border: none;
+  }
+  .dropdwn {
+    max-width: 401.031px;
+    left: 180.492px;
+  }
+
+  [class*="uk-dropdown-bottom"] {
+    margin-top: 5px;
+  }
+
   .content {
     width: 100%;
   }
@@ -403,7 +590,27 @@ p.adam {
     width: 150%;
   }
 }
+/* terakhir smpe sni */
 @media (max-width: 600px) {
+  .padding {
+    font-size: 2.3vh;
+  }
+
+  .uk-placeholder {
+    margin-bottom: 0;
+    padding: 0;
+    background: 0 0;
+    border: none;
+  }
+  .dropdwn {
+    max-width: 401.031px;
+    left: 180.492px;
+  }
+
+  [class*="uk-dropdown-bottom"] {
+    margin-top: 5px;
+  }
+
   .main {
     padding: 65px 0;
   }
