@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="500" viewBox="0 0 1366 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #fcfcfc;
+      }
+
+      .cls-2 {
+        fill: rgba(0,136,255,0.38);
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_443" data-name="Group 443" transform="translate(0 -1325)">
+    <g id="Rectangle_389" data-name="Rectangle 389" class="cls-1" transform="translate(0 1325)">
+      <rect class="cls-3" width="1366" height="500"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="1365" height="499"/>
+    </g>
+    <path id="Subtraction_3" data-name="Subtraction 3" class="cls-2" d="M0,409.622H0V0H343.147L62.787,372.05a96.963,96.963,0,0,1-28.661,25.618A95.287,95.287,0,0,1,0,409.622Z" transform="translate(0 1327)"/>
+  </g>
+</svg>

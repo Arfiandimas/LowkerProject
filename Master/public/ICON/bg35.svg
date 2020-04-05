@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1635.001" height="792.074" viewBox="0 0 1635.001 792.074">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #fff;
+      }
+
+      .cls-2 {
+        fill: rgba(0,136,255,0.38);
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_443" data-name="Group 443" transform="translate(29.99 -2736)">
+    <g id="Rectangle_389" data-name="Rectangle 389" class="cls-1" transform="translate(0 2736)">
+      <rect class="cls-3" width="1605.011" height="644"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="1604.011" height="643"/>
+    </g>
+    <path id="Subtraction_4" data-name="Subtraction 4" class="cls-2" d="M48.428,724.248h-.009a96.583,96.583,0,0,1-24.776-3.218A94.856,94.856,0,0,1,0,711.174h29.99V40.006L188.645,2.669A99.287,99.287,0,0,1,211.353,0a95.026,95.026,0,0,1,44.1,10.844,97.991,97.991,0,0,1,18.42,12.482,99.082,99.082,0,0,1,15.107,16.237,97.976,97.976,0,0,1,10.911,18.789,95.025,95.025,0,0,1,7.945,43.608,99.118,99.118,0,0,1-4.212,23.49L141.556,655.562a95.691,95.691,0,0,1-36.5,50.79,97.6,97.6,0,0,1-26.983,13.331A98.633,98.633,0,0,1,48.428,724.248Z" transform="translate(-29.989 2803.826)"/>
+  </g>
+</svg>

@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+table {
+    text-align: left;
+    display: inline-table;
+}
+
+.vlog {
+    max-width: 75%;
+}
+
+.login-button {
+    font-size: 0.850rem;
+    line-height: 30px;
+}
+
+.dropdown {
+    width: 50%;
+}
+
+
+
+.bg-image {
+    position: absolute;
+    background-image: url('../ICON/bannerfix.png');
+    background-position: center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 553px;
+    z-index: -1;
+
+}
+
+.judul {
+    text-align: center;
+    color: #fff;
+
+}
+
+.search {
+    text-align: center;
+}
+
+/* #section-a {
+    height: 553px;
+} */
+
+.testimoni {
+    height: 19em;
+}
+
+.testimoniul {
+    min-height: -webkit-fill-available !important;
+
+}
+
+.footer {
+    background-color: #212121;
+    color: white;
+    width: auto;
+    margin: 0;
+    padding: 16px;
+    height: auto;
+    padding-bottom: 10em;
+    font-size: 15px;
+}
+
+.footer-isi {
+    margin: 2em 0 0 0;
+}
+
+.footer ul li {
+    list-style-type: none;
+}
+
+.footer ol,
+ul {
+    padding-left: 0px;
+}
+
+.footer img {
+    max-width: 100%
+}
+
+.footer form {
+    width: 153px;
+    margin: 2em 0 0 0;
+}
+
+.bahasa {
+    background-color: currentColor;
+}
+
+.menu-parent {
+    width: 28%;
+}
+
+.menu-dashboard {
+    display: inline-grid;
+    margin: 0px 0 0 1em;
+}
+
+.menu-kanan {
+    width: 70%;
+}
+
+.menu-kanan ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.menu-kanan ul li {
+    margin: 0 2em 0 4px;
+}
+
+.slider-bendera {
+    padding: 1em;
+    margin: 15px 0 0 -38px;
+
+}
+
+.slider-bendera h3 {
+    font-size: larger;
+}
+
+.japan-modal {
+    display: inline-flex;
+    margin: 0px 0 0 5em;
+}
+
+.japan-modal li {
+    display: inline-grid;
+    margin: 23px 59px 0 25px;
+}
+
+.japan-modal img {
+    max-width: 100px;
+}
+
+.japan-modal h4 {
+    color: black;
+}
+
+footer a {
+    color: white;
+}
+
+/*START BANNER CSS*/
+.bungkus-banner {
+    display: grid;
+}
+
+.bg-banner {
+    position: relative;
+
+
+}
+
+.bg-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 50%;
+
+}
+
+/*END BANNER CSS*/
+
+
+/* MEDIA QUERIES */
+/*FULLSIZE*/
+@media(min-width: 641) {
+
+  
+
+}
+
+/*MOBILE SIZE*/
+@media(max-width: 700px) {
+    .navigasi {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+}
