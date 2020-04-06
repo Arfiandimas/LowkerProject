@@ -172,22 +172,11 @@ footer a {
 /*END BANNER CSS*/
 
 
-/* MEDIA QUERIES */
-/*FULLSIZE*/
-@media(min-width: 641) {
-
-  
-
-}
-
 /*MOBILE SIZE*/
 @media(max-width: 700px) {
     .navigasi {
         display: none;
     }
 
-    h1 {
-        font-size: 1.6em;
-    }
 
 }

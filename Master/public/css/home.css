@@ -26,10 +26,6 @@ a {
   text-decoration: none !important;
 }
 
-
-
-
-
 body{
 	font-family: 'Roboto', sans-serif;
 }
@@ -47,6 +43,28 @@ h1,h2,h3,h4,h5 {
 
 }
 
+.ulPencarian {
+  list-style: none;
+}
+
+.liPencarian {
+  margin: 0.5rem 0;
+}
+
+.img-box {
+  width:20vh;
+}
+
+#btnPencarian {
+  line-height: 30px;
+}
+
+.box-text {
+  margin-left: 2rem;
+  text-align: left;
+}
+
+
 nav {
   height: 60px;
 }
@@ -63,7 +81,7 @@ nav {
 }
 /* mobile size */
 .uk-button {
-  text-transform: none;
+  text-transform: capitalize;
   margin-right: 1rem;
 }
 
@@ -176,6 +194,11 @@ text-decoration: none;
   padding-top: 12rem;
 }
 
+.uk-navbar-toggle {
+  display: none;
+}
+
+
 
 
 /* end text limit */
@@ -193,7 +216,7 @@ text-decoration: none;
   .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
     min-height: 65px;
     padding: 0 15px;
-    text-transform: none;
+    text-transform: capitalize;
     font-size: 1rem;
     font-weight: 500;
  
@@ -269,8 +292,37 @@ text-decoration: none;
 
   .uk-input {
     height: 40px;
-    width: 300px;
+    width: 640px;
   }
+
+   /* PROPERTY PENCARIAN */
+.pencarian-dropdown {
+  width: 640px;
+  max-width: 640px;
+  left: 6%;
+  top: 35px;
+}
+
+   #btnPencarian {
+    line-height: 27px;
+    padding: 0 15px;
+  }
+
+  .img-box {
+    width: 16vh;
+    max-width: max-content;
+  }
+  
+
+  .box-text {
+    margin-left: 1.5rem;
+  }
+
+  .liPencarian {
+    margin: 0.6rem 0;
+  }
+  
+  /*  END PROPERTY PENCARIAN */
 
  
   .button1 {
@@ -356,6 +408,7 @@ text-decoration: none;
 
   /* END Slider Luar Negeri */
   
+
   /* Slider ASIA */
   .slider-bendera {
     padding: 0;
@@ -388,6 +441,64 @@ text-decoration: none;
   }
   /* END panah slider */
   
+ /* MODAL LOGIN STUDENT */
+  .loginInput {
+    height: 35px;
+    width: 450px;
+  
+  }
+  .form-check {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mr--1 {
+   padding-left: 9rem;
+  }
+  
+  
+  .floatt {
+    float: right;
+    padding-right: 9rem;
+  }
+
+  .ml--1 {
+    margin-left: 9rem;
+  }
+  
+
+  .mt--1 {
+    margin-top: 70px !important;
+    margin-bottom: 1rem;
+  }
+  
+  .imageP {
+    margin-top: 0.5rem;
+  }
+  
+  .loginBtnModal {
+    line-height: 35px;
+    margin-right: 0;
+    width: 450px;
+  }
+  
+  .cardModal {
+   margin-left: 1rem;
+   margin-top: 1rem;
+   padding: 25px;
+  
+  }
+  
+  .imgModal {
+    width: 6vh;
+    margin: 0 1rem;
+  }
+
+  .modalLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   /* END LOGIN STUDENT */
 
 
 .headSliderLowker {
@@ -517,7 +628,7 @@ text-decoration: none;
   .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
     min-height: 65px;
     padding: 0 15px;
-    text-transform: none;
+    text-transform: capitalize;
     font-size: 1rem;
     font-weight: 500;
  
@@ -583,7 +694,35 @@ text-decoration: none;
     padding-top: 4rem
   }
 
+  /* PROPERTY PENCARIAN */
+.pencarian-dropdown {
+  width: 500px;
+  max-width: 500px;
+  left: 6%;
+  top: 35px;
+}
+
+   #btnPencarian {
+    line-height: 27px;
+    padding: 0 15px;
+  }
+
+  .img-box {
+    width: 15vh;
+    max-width: max-content;
+  }
   
+
+  .box-text {
+    margin-left: 1.5rem;
+  }
+
+  .liPencarian {
+    margin: 0.5rem 0;
+  }
+  
+  /*  END PROPERTY PENCARIAN */
+
 
 
   .uk-input {
@@ -704,7 +843,63 @@ text-decoration: none;
   }
   /* END panah slider */
   
+  /* MODAL LOGIN STUDENT */
+  .loginInput {
+    height: 35px;
+  
+  }
+  .form-check {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mr--1 {
+   padding-left: 9rem;
+  }
+  
+  
+  .floatt {
+    float: right;
+    padding-right: 9rem;
+  }
 
+  .ml--1 {
+    margin-left: 9rem;
+  }
+  
+
+  .mt--1 {
+    margin-top: 70px !important;
+    margin-bottom: 1rem;
+  }
+  
+  .imageP {
+    margin-top: 0.5rem;
+  }
+  
+  .loginBtnModal {
+    line-height: 35px;
+    margin-right: 0;
+    width: 350px;
+  }
+  
+  .cardModal {
+   margin-left: 1rem;
+   margin-top: 1rem;
+   padding: 25px;
+  
+  }
+  
+  .imgModal {
+    width: 5vh;
+    margin: 0 1rem;
+  }
+
+  .modalLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   /* END LOGIN STUDENT */
 
 .headSliderLowker {
   font-size: 1.5rem;
@@ -823,7 +1018,7 @@ text-decoration: none;
   .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
     min-height: 65px;
     padding: 0 15px;
-    text-transform: none;
+    text-transform: capitalize;
     font-size: 1rem;
     font-weight: 500;
  
@@ -876,6 +1071,35 @@ text-decoration: none;
     height: 40px;
     width: 300px;
   }
+
+   /* PROPERTY PENCARIAN */
+.pencarian-dropdown {
+  width: 500px;
+  max-width: 500px;
+  left: 6%;
+  top: 35px;
+}
+
+   #btnPencarian {
+    line-height: 27px;
+    padding: 0 15px;
+  }
+
+  .img-box {
+    width: 15vh;
+    max-width: max-content;
+  }
+  
+
+  .box-text {
+    margin-left: 1.5rem;
+  }
+
+  .liPencarian {
+    margin: 0.5rem 0;
+  }
+  
+  /*  END PROPERTY PENCARIAN */
 
   #pencarian {
     width: 500px;
@@ -993,6 +1217,64 @@ text-decoration: none;
   }
   /* END panah slider */
   
+   /* MODAL LOGIN STUDENT */
+   .loginInput {
+    height: 35px;
+  
+  }
+  .form-check {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mr--1 {
+   padding-left: 9rem;
+  }
+  
+  
+  .floatt {
+    float: right;
+    padding-right: 9rem;
+  }
+
+  .ml--1 {
+    margin-left: 9rem;
+  }
+  
+
+  .mt--1 {
+    margin-top: 70px !important;
+    margin-bottom: 1rem;
+  }
+  
+  .imageP {
+    margin-top: 0.5rem;
+  }
+  
+  .loginBtnModal {
+    line-height: 35px;
+    margin-right: 0;
+    width: 350px;
+  }
+  
+  .cardModal {
+   margin-left: 1rem;
+   margin-top: 1rem;
+   padding: 25px;
+  
+  }
+  
+  .imgModal {
+    width: 5vh;
+    margin: 0 1rem;
+  }
+
+  .modalLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   /* END LOGIN STUDENT */
+
 
 
 .headSliderLowker {
@@ -1095,7 +1377,7 @@ text-decoration: none;
 
 }
 
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .uk-section {
  
     padding-top: 5rem;
@@ -1112,11 +1394,13 @@ text-decoration: none;
   .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
     min-height: 65px;
     padding: 0 15px;
-    text-transform: none;
+    text-transform: capitalize;
     font-size: 1rem;
     font-weight: 500;
  
 }
+
+
 
 
   .header-font {
@@ -1155,15 +1439,38 @@ text-decoration: none;
     padding-top: 4rem;
   }
 
-  .pencarian-dropdown {
-    width: 300px;
-    left: 30.7%;
-    top: 35px;
+  /* PROPERTY PENCARIAN */
+.pencarian-dropdown {
+  width: 500px;
+  max-width: 500px;
+  left: 6%;
+  top: 35px;
+}
+
+   #btnPencarian {
+    line-height: 27px;
+    padding: 0 15px;
   }
+
+  .img-box {
+    width: 15vh;
+    max-width: max-content;
+  }
+  
+
+  .box-text {
+    margin-left: 1.5rem;
+  }
+
+  .liPencarian {
+    margin: 0.5rem 0;
+  }
+  
+  /*  END PROPERTY PENCARIAN */
 
   .uk-input {
     height: 35px;
-    width: 300px;
+    width: 350px;
   }
 
   .button1 {
@@ -1275,7 +1582,57 @@ text-decoration: none;
   }
   /* END panah slider */
   
+   /* MODAL LOGIN STUDENT */
+   .loginInput {
+    height: 35px;
+  
+  }
+  .form-check {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mr--1 {
+   padding-left: 9rem;
+  }
+  
+  
+  .floatt {
+    float: right;
+    padding-right: 9rem;
+  }
 
+  .ml--1 {
+    margin-left: 9rem;
+  }
+  
+
+  .mt--1 {
+    margin-top: 70px !important;
+    margin-bottom: 1rem;
+  }
+  
+  .imageP {
+    margin-top: 0.5rem;
+  }
+  
+  .loginBtnModal {
+    line-height: 35px;
+    margin-right: 0;
+    width: 350px;
+  }
+  
+  .cardModal {
+   margin-left: 1rem;
+   margin-top: 1rem;
+   padding: 25px;
+  
+  }
+  
+  .imgModal {
+    width: 5vh;
+    margin: 0 1rem;
+  }
+   /* END LOGIN STUDENT */
 
 .headSliderLowker {
   font-size: 1.5rem;
@@ -1305,13 +1662,7 @@ text-decoration: none;
   padding-top: 0px;
   padding-right: 0px;
   padding-left: 0px;
-  box-shadow: 
-  0 1px 2px rgba(0,0,0,0.07), 
-  0 2px 4px rgba(0,0,0,0.07), 
-  0 4px 8px rgba(0,0,0,0.07),
-  0 8px 16px rgba(0,0,0,0.07), 
-  0 16px 32px rgba(0,0,0,0.07),
-  0 32px 64px rgba(0,0,0,0.07);
+
  }
 
 .cardSliderLowker {
@@ -1377,6 +1728,13 @@ text-decoration: none;
 
 
 @media (min-width: 641px) and (max-width: 768px) {
+  .uk-navbar-nav>li>a {
+    min-height: 65px;
+    padding: 0 15px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+  }
   .uk-section {
  
     padding-top: 4rem;
@@ -1407,6 +1765,39 @@ text-decoration: none;
     width: 350px;
 
   }
+
+    /* PROPERTY PENCARIAN */
+.pencarian-dropdown {
+  width: 500px;
+  max-width: 500px;
+  left: 6%;
+  top: 35px;
+}
+
+   #btnPencarian {
+    line-height: 27px;
+    padding: 0 15px;
+  }
+
+  .img-box {
+    width: 15vh;
+    max-width: max-content;
+  }
+  
+
+  .box-text {
+    margin-left: 1.5rem;
+  }
+
+  .liPencarian {
+    margin: 0.2rem 0;
+  }
+  
+  
+
+  /*  END PROPERTY PENCARIAN */
+
+
 
   .uk-button {
     line-height: 28px;
@@ -1557,6 +1948,60 @@ text-decoration: none;
   }
   /* END panah slider */
 
+   /* MODAL LOGIN STUDENT */
+ .loginInput {
+  height: 35px;
+
+}
+.form-check {
+  margin-bottom: 0.5rem;
+}
+
+
+.ml--1 {
+  margin-left: 1rem;
+}
+
+
+
+.mr--1 {
+  padding-left: 6rem;
+ }
+
+ .mt--1 {
+  margin-top: 70px !important;
+  margin-bottom: 1rem;
+}
+ 
+ 
+ .floatt {
+   float: right;
+   padding-right: 6rem;
+ }
+
+
+.imageP {
+  margin-top: 0.5rem;
+}
+
+.loginBtnModal {
+  line-height: 35px;
+  margin-right: 0;
+  width: 300px;
+}
+
+.cardModal {
+ margin-left: 1rem;
+ margin-top: 1rem;
+ padding: 25px;
+
+}
+
+.imgModal {
+  width: 5vh;
+  margin: 0 1rem;
+}
+ /* END LOGIN STUDENT */
 
 .headSliderLowker {
   font-size: 1.5rem;
@@ -1586,13 +2031,6 @@ text-decoration: none;
   padding-top: 0px;
   padding-right: 0px;
   padding-left: 0px;
-  box-shadow: 
-  0 1px 2px rgba(0,0,0,0.07), 
-  0 2px 4px rgba(0,0,0,0.07), 
-  0 4px 8px rgba(0,0,0,0.07),
-  0 8px 16px rgba(0,0,0,0.07), 
-  0 16px 32px rgba(0,0,0,0.07),
-  0 32px 64px rgba(0,0,0,0.07);
  }
 
 .cardSliderLowker {
@@ -1658,6 +2096,10 @@ text-decoration: none;
  
     padding-top: 4rem;
   }
+
+  .uk-navbar-toggle {
+    display: block;
+  }
   
   .bg3 {
     background-image: none;
@@ -1675,6 +2117,38 @@ text-decoration: none;
   h2,h3 {
     font-size : 1.7rem
   }
+
+   /* PROPERTY PENCARIAN */
+.pencarian-dropdown {
+  width: 500px;
+  max-width: 500px;
+  left: 6%;
+  top: 35px;
+}
+
+   #btnPencarian {
+    line-height: 27px;
+    padding: 0 15px;
+  }
+
+  .img-box {
+    width: 15vh;
+    max-width: max-content;
+  }
+  
+
+  .box-text {
+    margin-left: 1.5rem;
+  }
+
+  .liPencarian {
+    margin: 0.2rem 0;
+  }
+  
+  
+
+  /*  END PROPERTY PENCARIAN */
+
 
  
 
@@ -1730,6 +2204,7 @@ text-decoration: none;
 
   /* END Slider Luar Negeri */
   
+
   /* Slider ASIA */
   .slider-bendera {
     padding: 0;
@@ -1761,6 +2236,58 @@ text-decoration: none;
   }
   /* END panah slider */
 
+  /* MODAL LOGIN STUDENT */
+ .loginInput {
+  height: 35px;
+
+}
+.form-check {
+  margin-bottom: 0.5rem;
+}
+
+
+
+.ml--1 {
+  margin-left: 1rem;
+}
+
+.mr--1 {
+  padding-left: 5rem;
+ }
+
+ .mt--1 {
+  margin-top: 70px !important;
+  margin-bottom: 1rem;
+}
+ 
+ 
+ .floatt {
+   float: right;
+   padding-right: 5rem;
+ }
+
+.imageP {
+  margin-top: 0.5rem;
+}
+
+.loginBtnModal {
+  line-height: 35px;
+  margin-right: 0;
+  width: 300px;
+}
+
+.cardModal {
+ margin-left: 1rem;
+ margin-top: 1rem;
+ padding: 25px;
+
+}
+
+.imgModal {
+  width: 5vh;
+  margin: 0 1rem;
+}
+ /* END LOGIN STUDENT */
 
 
 
@@ -1826,13 +2353,7 @@ text-decoration: none;
   padding-top: 0px;
   padding-right: 0px;
   padding-left: 0px;
-  box-shadow: 
-  0 1px 2px rgba(0,0,0,0.07), 
-  0 2px 4px rgba(0,0,0,0.07), 
-  0 4px 8px rgba(0,0,0,0.07),
-  0 8px 16px rgba(0,0,0,0.07), 
-  0 16px 32px rgba(0,0,0,0.07),
-  0 32px 64px rgba(0,0,0,0.07);
+
  }
 
 .cardSliderLowker {
@@ -1865,6 +2386,8 @@ text-decoration: none;
   font-size: 1.3rem;
   color: #333;
 }
+
+
 
 .txtModal {
   font-size: 1.2rem;
@@ -1903,6 +2426,10 @@ text-decoration: none;
 
 
 @media (min-width: 481px) and (max-width: 568px) {
+  .uk-navbar-toggle {
+    display: block;
+  }
+  
   .bg3 {
     background-image: none;
   }
@@ -1929,6 +2456,31 @@ text-decoration: none;
     font-size: 1.2rem;
     color: #333;
   }
+
+   /* PROPERTY PENCARIAN */
+   #btnPencarian {
+    line-height: 27px;
+    padding: 0 15px;
+  }
+
+  .img-box {
+    width: 15vh;
+    max-width: max-content;
+  }
+  
+
+  .box-text {
+    margin-left: 1.5rem;
+  }
+
+  .liPencarian {
+    margin: 0.2rem 0;
+  }
+  
+  
+
+  /*  END PROPERTY PENCARIAN */
+
 
   .uk-section {
  
@@ -2045,6 +2597,46 @@ text-decoration: none;
   /* END panah slider */
 
   
+  /* MODAL LOGIN STUDENT */
+ .loginInput {
+  height: 35px;
+
+}
+.form-check {
+  margin-bottom: 0.5rem;
+}
+
+.mr--1 {
+  margin-right: 64px;
+}
+
+.floatt {
+  float: right;
+}
+
+.imageP {
+  margin-top: 0.5rem;
+}
+
+.loginBtnModal {
+  line-height: 35px;
+  margin-right: 0;
+  width: 300px;
+}
+
+.cardModal {
+ margin-left: 1rem;
+ margin-top: 1rem;
+ padding: 25px;
+
+}
+
+.imgModal {
+  width: 5vh;
+  margin: 0 1rem;
+}
+ /* END LOGIN STUDENT */
+  
 
 
 .cardContent1
@@ -2061,13 +2653,7 @@ text-decoration: none;
   padding-top: 0px;
   padding-right: 0px;
   padding-left: 0px;
-  box-shadow: 
-  0 1px 2px rgba(0,0,0,0.07), 
-  0 2px 4px rgba(0,0,0,0.07), 
-  0 4px 8px rgba(0,0,0,0.07),
-  0 8px 16px rgba(0,0,0,0.07), 
-  0 16px 32px rgba(0,0,0,0.07),
-  0 32px 64px rgba(0,0,0,0.07);
+ 
  }
 
 .cardSliderLowker {
@@ -2121,6 +2707,10 @@ text-decoration: none;
 }
 
 @media (min-width: 350px) and (max-width: 480px) {
+  .uk-navbar-toggle {
+    display: block;
+  }
+  
   .bg3 {
     background-image: none;
   }
@@ -2136,6 +2726,30 @@ text-decoration: none;
   .loginTxt {
     margin-bottom: 1rem;
   }
+
+  /* PROPERTY PENCARIAN */
+  #btnPencarian {
+    line-height: 27px;
+    padding: 0 15px;
+  }
+
+  .img-box {
+    width: 15vh;
+    max-width: max-content;
+  }
+  
+
+  .box-text {
+    margin-left: 1.5rem;
+  }
+
+  .liPencarian {
+    margin: 0.2rem 0;
+  }
+  
+  
+
+  /*  END PROPERTY PENCARIAN */
 
   .bg-image {
     height: 35vh;
@@ -2193,6 +2807,33 @@ text-decoration: none;
    
 
   /* END Slider Luar Negeri */
+
+
+  /* MODAL LOGIN STUDENT */
+ .loginInput {
+   height: 35px;
+
+ }
+
+ .loginBtnModal {
+   line-height: 35px;
+ }
+
+ .floatt {
+   float: none;
+ }
+ .cardModal {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  padding: 25px;
+
+ }
+
+ .imgModal {
+   width: 5vh;
+   margin: 0 1rem;
+ }
+  /* END LOGIN STUDENT */
   
   /* Slider ASIA */
   .slider-bendera {
@@ -2227,6 +2868,10 @@ text-decoration: none;
    width: 12vh;
  }
 
+ .uk-dropdown {
+   padding: 10px;
+ }
+
 .cardContent1
  {
    margin-left: 0;
@@ -2246,13 +2891,7 @@ text-decoration: none;
   padding-top: 0px;
   padding-right: 0px;
   padding-left: 0px;
-  box-shadow: 
-  0 1px 2px rgba(0,0,0,0.07), 
-  0 2px 4px rgba(0,0,0,0.07), 
-  0 4px 8px rgba(0,0,0,0.07),
-  0 8px 16px rgba(0,0,0,0.07), 
-  0 16px 32px rgba(0,0,0,0.07),
-  0 32px 64px rgba(0,0,0,0.07);
+
  }
 
 

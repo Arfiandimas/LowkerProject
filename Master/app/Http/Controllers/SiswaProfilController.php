@@ -132,9 +132,9 @@ class SiswaProfilController extends Controller
             $user->save();
         }
         $users = User::where('id', auth()->user()->id)->get();
-        $perusahaan = Perusahaan::get();
+        $siswa = Siswa::get();
 
-        return view('siswa.profilsiswa', compact('users', 'perusahaan'), array('user' => Auth::user()));
+        return view('siswa.profilsiswa', compact('users', 'siswa'), array('user' => Auth::user()));
 
     }
 }
