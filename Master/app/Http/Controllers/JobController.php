@@ -3,11 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
-use Auth;
-use App\User;
 
-class KeamananController extends Controller
+class JobController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +13,7 @@ class KeamananController extends Controller
      */
     public function index()
     {
-        $users = User::where('id', auth()->user()->id)->get();
-        return view('perusahaan.keamanan',  compact('users'));
+        return view('job.dalamnegeri');
     }
 
     /**
@@ -27,7 +23,7 @@ class KeamananController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**
@@ -38,17 +34,7 @@ class KeamananController extends Controller
      */
     public function store(Request $request)
     {
-        $usepas = Auth::user()->password;
-        $lampas = $request->passwordlama;
-        $barpas = $request->passwordbaru;
-        if( password_verify($lampas, $usepas) ){
-            User::where('id', auth()->user()->id)->update([
-                'password' => Hash::make($barpas),
-            ]);
-            return redirect()->route('keamananperusahaan.index')->with('success_message', 'password berhasil diperbarui');
-        }else{
-            return redirect()->route('keamananperusahaan.index')->with('success_message', 'Password yang anda masukkan salah');
-        }
+        //
     }
 
     /**
