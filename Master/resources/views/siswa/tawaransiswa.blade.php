@@ -4,38 +4,28 @@
 
 @section('content')
 
-        <div class="container" uk-grid>
-                    <div class="uk-width-1-4@m uk-background-primary " style="width: 27%;">
+                    <div class="container" uk-grid>
+
+                    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-push" style="height: 3em;
+                    background-color: #0088FF;width: 8em;border-bottom-right-radius: 23px;border-top-right-radius: 23px;color: white;margin: 3em 0 0 0;"><i class="fas fa-arrow-right"></i></button>
+
+                    <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+                    <div class="uk-offcanvas-bar uk-background-primary">
+
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <!-- isi dashboard -->
+                    <div class="uk-width-1-4@m uk-background-primary " style="width: 100%;">
 
                         <h2 class="uk-text-bold uk-text-left uk-margin-medium-left" style="color: white;">Dashboard</h2>
-                        
-                        <!-- PROFIL DASHBORD -->
-                        <div style="">
-                        <img class="uk-align-center uk-border-circle" id="output" src="/ICON/uploadimage.png" width="140" />
-                        <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
-                        <label style="float: right;margin-top: -29%;margin-right: 12%;" class="uk-text-center" for="file" style="cursor: pointer;"><img src="/ICON/logoupload.png" alt=""></label>
-                        </div>
-                        
-                        
-                        <script>
-                        var loadFile = function(event) {
-                        var image = document.getElementById('output');
-                        image.src = URL.createObjectURL(event.target.files[0]);
-                        };
-                        </script>
-                        <!-- END PROFIL DASHBORD -->
-                        
-                        
-                        
-                        <!-- <img class="uk-align-center" src="ICON/information.png" alt=""> -->
+                        <img class="uk-align-center" src="/ICON/information.png" alt="">
                         <h3 class="uk-text-bold uk-text-center" style="color: white;">Annisa Kumalasari</h3>
                         <p class="uk-text-center uk-margin-large-bottom" style="color: white;">0812-3456-789</p>
 
-                        <div class="uk-margin-medium-left">
-                            
+                        <div class="dashboard-siswa uk-margin-medium-left">
+
                         <a href="{{ route('siswa.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo1.png" alt="">Information</h4></a>
                         <a href="{{ route('siswafavorite.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo2.png" alt="">Favorite</h4></a>
-                        <a href="{{ route('siswatawaran.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo3.png" alt="">Pasang Tawaran</h4></a>
+                        <a href="{{ route('siswatawaran.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left;width:max-content;"><img class="uk-margin-small-right" src="/ICON/infologo3.png" alt="">Pasang Tawaran</h4></a>
                         <a href="{{ route('siswabantuan.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo4.png" alt="">Bantuan</h4></a>
 
                         <br>
@@ -46,6 +36,7 @@
                         <br>
                         <br>
                         <br>
+
                         <a onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
                         <button class="uk-button uk-button-text">
@@ -55,7 +46,9 @@
                             @csrf
                         </form>
                     </div>    
-                </div>
+                    </div>
+                    </div>    
+                    </div>
 
 
 

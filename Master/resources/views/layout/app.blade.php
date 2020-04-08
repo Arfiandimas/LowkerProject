@@ -15,43 +15,23 @@
     </head>
     <body>
 
-        <!-- BAGIAN NAVBAR -->
+       <!-- BAGIAN NAVBAR -->
 
     <div class="uk-container-expand">
     <nav class="uk-navbar-container" uk-navbar>
 
         <div class="uk-navbar-left">
-        
-            <div id="offcanvas-nav-primary" uk-offcanvas="mode: push; flip: true; ">
-    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-    <button class="uk-offcanvas-close" type="button" uk-close></button>
-        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-            <li class="uk-active"><a href="#">Beranda</a></li>
-            <li class="uk-parent">
-                <a href="#">Pembelajaran</a>
-            </li>
-            <li class="uk-parent">
-                <a href="#">Gallery</a>
-            </li>
-            <li class="uk-parent">
-                <a href="#">Tentang Kami</a>
-            </li>
-        </ul>
-
-    </div>
-</div>
-        <a class="marginNav" href="/"><h4 class="header-font">Your <strong>Company</strong></h4></a>
+        <a href="/"><h2 class="header-font">Your <strong>Company</strong></h2></a>
         </div>
 
         <div class="uk-navbar-right">
-        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"  uk-toggle="target: #offcanvas-nav-primary"></a>
+
             <ul class="navigasi uk-navbar-nav">
 
-                <li  class="uk-active" ><a href="#">Beranda</a></li>
-                <li  class="uk-parent"><a  href="#">Pembelajaran</a></li>
-                <li  class="uk-parent"><a href="#">Gallery</a></li>
-                <li  class="uk-parent"><a href="#">Tentang Kami</a></li>
-        
+                <li class="uk-text-bold"><a href="#">Beranda</a></li>
+                <li class="uk-text-bold"><a  href="#">Pembelajaran</a></li>
+                <li class="uk-text-bold"><a href="#">Gallery</a></li>
+                <li class="uk-text-bold"><a href="#">Tentang Kami</a></li>
                 @guest
                     <input type="hidden" class="uk-text-bold" value="Silahkan Login">
                 @else
@@ -72,8 +52,34 @@
 
             
                 
-           
+            <button id="hamburger" class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav" style="width: 100%;
+    margin-left: -10%;"><span uk-icon="icon: table"></span></button>
+            <div id="offcanvas-nav" uk-offcanvas="flip:true; overlay:true;">
+    <div class="canvas-hamburger uk-offcanvas-bar">
 
+        <div class="profile-burger uk-box-shadow-large">
+            Beranda
+            
+        </div>
+        
+
+        <ul class="profile-burger uk-nav uk-nav-default">
+            
+            <li style="display: flex;margin-left: 4em"><a href="#"><img src="ICON/avatar2.png" alt=""><h5>Hello, Guest</h5></a></li>
+            </li>
+            <li class="uk-nav-header">Main Menu</li>
+            <li><a href="#"><span class="uk-margin-small-right"></span>BERANDA</a></li>
+            <li><a href="#"><span class="uk-margin-small-right"></span> PEMBELAJARAN</a></li>
+            <li><a href="#"><span class="uk-margin-small-right"></span> GALLERY</a></li>
+            <li><a href="#"><span class="uk-margin-small-right"></span> TENTANG KAMI</a></li>
+            
+            <li class="uk-nav-divider"></li>
+            
+        </ul>
+
+        </div>
+    </div>
+            
 
         </div>
     </nav>

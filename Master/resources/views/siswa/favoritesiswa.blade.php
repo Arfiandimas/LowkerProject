@@ -4,40 +4,51 @@
 
 @section('content')
 
-        <div class="container" uk-grid>
-                    <div class="uk-width-1-4@m uk-background-primary ">
+            <div class="container" uk-grid>
 
-                        <h2 class="uk-text-bold uk-text-left uk-margin-medium-left" style="color: white;">Dashboard</h2>
-                        <img class="uk-align-center" src="/ICON/information.png" alt="">
-                        <h3 class="uk-text-bold uk-text-center" style="color: white;">Annisa Kumalasari</h3>
-                        <p class="uk-text-center uk-margin-large-bottom" style="color: white;">0812-3456-789</p>
+            <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-push" style="height: 3em;
+            background-color: #0088FF;width: 8em;border-bottom-right-radius: 23px;border-top-right-radius: 23px;color: white;margin: 3em 0 0 0;"><i class="fas fa-arrow-right"></i></button>
 
-                        <div class="uk-margin-medium-left">
-                        
-                        <a href="{{ route('siswa.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo1.png" alt="">Information</h4></a>
-                        <a href="{{ route('siswafavorite.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo2.png" alt="">Favorite</h4></a>
-                        <a href="{{ route('siswatawaran.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo3.png" alt="">Pasang Tawaran</h4></a>
-                        <a href="{{ route('siswabantuan.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo4.png" alt="">Bantuan</h4></a>
+            <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+            <div class="uk-offcanvas-bar uk-background-primary">
 
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <!-- isi dashboard -->
+            <div class="uk-width-1-4@m uk-background-primary " style="width: 100%;">
 
-                        <a onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();">
-                        <button class="uk-button uk-button-text">
-                        <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo5.png" alt="">Exit</h4></button></a>
+                <h2 class="uk-text-bold uk-text-left uk-margin-medium-left" style="color: white;">Dashboard</h2>
+                <img class="uk-align-center" src="/ICON/information.png" alt="">
+                <h3 class="uk-text-bold uk-text-center" style="color: white;">Annisa Kumalasari</h3>
+                <p class="uk-text-center uk-margin-large-bottom" style="color: white;">0812-3456-789</p>
 
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                    </div>    
-                </div>
+                <div class="dashboard-siswa uk-margin-medium-left">
+
+                <a href="{{ route('siswa.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo1.png" alt="">Information</h4></a>
+                <a href="{{ route('siswafavorite.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo2.png" alt="">Favorite</h4></a>
+                <a href="{{ route('siswatawaran.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left;width:max-content;"><img class="uk-margin-small-right" src="/ICON/infologo3.png" alt="">Pasang Tawaran</h4></a>
+                <a href="{{ route('siswabantuan.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo4.png" alt="">Bantuan</h4></a>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <a onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                <button class="uk-button uk-button-text">
+                <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo5.png" alt="">Exit</h4></button></a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+            </div>    
+            </div>
+            </div>    
+            </div>
 
 
 

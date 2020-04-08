@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+
+
+/* CSS SEMENTARA */
+.canvas-hamburger{
+  background: grey;
+  color: white; 
+}
+.profile-burger{
+  padding: 3px 0 4px 8px;
+}
+.profile-burger img{
+  max-width: 50%;
+}
+.profile-burger ul li a{
+  display: flex;
+  color: black;
+}
+.uk-offcanvas-bar{
+  background: #0f6ecd;
+}
+/* END CSS SEMENTARA */
+
+
+
+
 /* width */
 ::-webkit-scrollbar {
   width: 13px;
