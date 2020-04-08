@@ -864,11 +864,10 @@ lowongan Pekerjaan dari berbagai negara</strong></h2>
 
                 <!-- MODAL Dalam Negri -->
                                     
-                                    <div id="dalam" class="uk-modal-container7" uk-modal>
+                        <div id="dalam" class="uk-modal-container7" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body" style="background-image: url(ICON/signup.png);">
                             <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
                             
-                           
                             <div class="uk-child-width-expand@s uk-text-center uk-flex-column" uk-grid>
 
                                 <div class="uk-container uk-text-center uk-margin uk-padding-large ">
@@ -880,27 +879,23 @@ lowongan Pekerjaan dari berbagai negara</strong></h2>
 
                                         <div class="listPanelModal uk-panel uk-panel-scrollable uk-align-center uk-text-left">
                                                 <ul class="uk-list">
-                                                    <li>Ambon</li>
-                                                    <li>Bali</li>
-                                                    <li>Balikpapan</li>
-                                                    <li>Bandung</li>
-                                                    <li>Bangil</li>
-                                                    <li>Banjarmasin</li>
-                                                    <li>Banyuwangi</li>
-                                                    <li>Batang</li>
-                                                    <li>Bengkulu</li>
-                                                    <li>Biak Mokmer</li>
-                                                    <li>Bima</li>
-                                                    <li>Binjai</li>
+                                                    <li><a href="{{ route('job.index') }}">Ambon</a></li>
+                                                    <li><a href="{{ route('job.index') }}">Bali</a></li>
+                                                    <li><a href="{{ route('job.index') }}">Balikpapan</a></li>
+                                                    <li><a href="{{ route('job.index') }}">Bandung</a></li>
+                                                    <li><a href="{{ route('job.index') }}">Bangil</a></li>
+                                                    <li><a href="{{ route('job.index') }}">Banjarmasin</a></li>
+                                                    <li><a href="{{ route('job.index') }}">Banyuwangi</a></li>
+                                                    <li><a href="{{ route('job.index') }}">Batang</a></li>
+                                                    <li><a href="{{ route('job.index') }}">Bengkulu</a></li>
+                                                    <li><a href="{{ route('job.index') }}">Biak Mokmer</a></li>
+                                                    <li><a href="{{ route('job.index') }}">Bima</a></li>
+                                                    <li><a href="{{ route('job.index') }}">Binjai</a></li>
 
                                                 </ul>
 
                                             </div>
                                 </div>
-
-
-                               
-                                
 
 
                         </div>

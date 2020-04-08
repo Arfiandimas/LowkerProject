@@ -75,7 +75,8 @@
 
                 <div class="menu-kanan uk-width-1-2">
                         <h2 class="uk-text-bold">Keamanan</h2>
-                        <form action="{{ route('keamananperusahaan.create') }}" method="POST">
+                        <form action="{{ route('keamananperusahaan.store') }}" method="POST">
+                        {{-- <form action="" method="POST"> --}}
                         {{ csrf_field() }}
                             <h4>Password Lama</h4>
                             <input id="passwordlama" name="passwordlama" class="uk-input uk-width-1-3" type="password" placeholder="Masukkan Password Lama" >
