@@ -8,7 +8,7 @@
 @if($user->id == auth()->user()->id)
 
 
-<div class="container-expand uk-text-center">
+<!-- <div class="container-expand uk-text-center">
     <img src="/uploads/avatars/{{ $user->avatar }}" class="bg-banner" style="width:250px; height:250px; float:center; border-radius:50px;" alt="">
     <form enctype="multipart/form-data" action="{{ route('siswa.avatar') }}" method="POST">
         @csrf
@@ -23,49 +23,64 @@
     <hr>
 
 
+</div> -->
+
+      <!-- DASHBOARD SISWA  -->
+    <div class="container" uk-grid>
+
+        <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-push" style="height: 3em;
+background-color: #0088FF;width: 8em;border-bottom-right-radius: 23px;border-top-right-radius: 23px;color: white;margin: 3em 0 0 0;"><i class="fas fa-arrow-right"></i></button>
+    
+        <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+    <div class="uk-offcanvas-bar uk-background-primary">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+      <!-- Isi Dashboard Profile -->
+      <div class="uk-width-1-4@s" style="width: 100%;">
+
+            <h2 class="uk-text-bold uk-text-left uk-margin-medium-left" style="color: white;">Dashboard</h2>
+            <img class="uk-align-center" src="/ICON/information.png" alt="">
+            @foreach( $siswa as $sis)
+            @if($sis->user_id == auth()->user()->id)
+            <h3 class="uk-text-bold uk-text-center" style="color: white;">{{ $sis->nama_depan }}  {{ $sis->nama_belakang }}</h3>
+            <p class="uk-text-center uk-margin-large-bottom" style="color: white;">{{ $sis->telepon }}</p>
+            @endif
+            @endforeach
+
+            <div class="dashboard-siswa uk-margin-medium-left">
+
+            <a href="{{ route('siswa.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo1.png" alt="">Information</h4></a>
+            <a href="{{ route('siswafavorite.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo2.png" alt="">Favorite</h4></a>
+            <a href="{{ route('siswatawaran.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left;width: max-content;"><img class="uk-margin-small-right" src="/ICON/infologo3.png" alt="">Pasang Tawaran</h4></a>
+            <a href="{{ route('siswabantuan.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo4.png" alt="">Bantuan</h4></a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+            <button class="uk-button uk-button-text">
+            <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo5.png" alt="">Exit</h4></button></a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+            </div>    
+            </div>
+      <!-- END Isi Dashboard Profile -->
+    </div>
 </div>
-
-        <div class="container" uk-grid>
-                    <div class="uk-width-1-4@s uk-background-primary ">
-
-                        <h2 class="uk-text-bold uk-text-left uk-margin-medium-left" style="color: white;">Dashboard</h2>
-                        <img class="uk-align-center" src="/ICON/information.png" alt="">
-                        @foreach( $siswa as $sis)
-                        @if($sis->user_id == auth()->user()->id)
-                        <h3 class="uk-text-bold uk-text-center" style="color: white;">{{ $sis->nama_depan }}  {{ $sis->nama_belakang }}</h3>
-                        <p class="uk-text-center uk-margin-large-bottom" style="color: white;">{{ $sis->telepon }}</p>
-                        @endif
-                        @endforeach
-
-                        <div class="uk-margin-medium-left">
-                        
-                        <a href="{{ route('siswa.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo1.png" alt="">Information</h4></a>
-                        <a href="{{ route('siswafavorite.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo2.png" alt="">Favorite</h4></a>
-                        <a href="{{ route('siswatawaran.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo3.png" alt="">Pasang Tawaran</h4></a>
-                        <a href="{{ route('siswabantuan.index') }}"><h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo4.png" alt="">Bantuan</h4></a>
-
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();">
-                        <button class="uk-button uk-button-text">
-                        <h4 class="uk-text-bold" style="color: white;text-align: left"><img class="uk-margin-small-right" src="/ICON/infologo5.png" alt="">Exit</h4></button></a>
-
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                        </div>    
-                </div>
+                   <!-- END DASHBOARD SISWA -->
 
 
 
-            <div class="uk-width-expand@m uk-padding-large ">
+            <div class="uk-width-expand@m uk-padding-large " style="margin: -1em 0 0 4em;" uk-grid>
             @foreach( $siswa as $sis)
             @if($sis->user_id == auth()->user()->id)
                 <h1 class="uk-margin-medium-left uk-margin-medium-bottom uk-text-bold">Edit Profile</h1>
@@ -81,7 +96,7 @@
 
 
                     <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                        <select class="uk-select uk-width-1-4 crs-country" data-region-id="negara" name="negara" placeholder="Negara" ></select>
+                        <select class="uk-select uk-width-1-4 crs-country" data-region-id="negara" name="negara" placeholder="Negara" style="width: 9em;margin-left: 2em;" ></select>
                     </div>
 
                     <button type="submit" class="uk-button uk-button-primary uk-align-center uk-margin-large-bottom">Simpan</button>

@@ -23,7 +23,7 @@ table {
     width: 50%;
 }
 
-
+.header-font {}
 
 .bg-image {
     position: absolute;
@@ -39,16 +39,16 @@ table {
 .judul {
     text-align: center;
     color: #fff;
-
+    padding-top: 3em;
 }
 
 .search {
     text-align: center;
 }
 
-/* #section-a {
+#section-a {
     height: 553px;
-} */
+}
 
 .testimoni {
     height: 19em;
@@ -84,12 +84,12 @@ ul {
 }
 
 .footer img {
-    max-width: 100%
+    max-width: 20%
 }
 
 .footer form {
-    width: 153px;
-    margin: 2em 0 0 0;
+    width: 10.5em;
+    margin: 1em 0 0 -8px;
 }
 
 .bahasa {
@@ -102,11 +102,22 @@ ul {
 
 .menu-dashboard {
     display: inline-grid;
-    margin: 0px 0 0 1em;
+    margin: 2em 0 0 1em;
+}
+
+.menu-dashboard h4{
+    width: 12em;
+    margin-top: 1em;
+}
+.dashboard-siswa h4{
+    margin-top: 2em;
 }
 
 .menu-kanan {
     width: 70%;
+    margin-left: 5%;
+    padding-bottom: 5em;
+    padding-top: 1em;
 }
 
 .menu-kanan ul {
@@ -123,10 +134,23 @@ ul {
     margin: 15px 0 0 -38px;
 
 }
+.slider-luarnegeri a{
+    width: 16em;
+}
+.slider-luarnegeri a p{
+    width: 15em;
+}
+.slider-luarnegeri a h4{
+    margin-left: 4em;
+}
+.slider-luarnegeri a img{
+    margin-left: 2em;
+}
 
 .slider-bendera h3 {
     font-size: larger;
 }
+
 
 .japan-modal {
     display: inline-flex;
@@ -172,11 +196,39 @@ footer a {
 /*END BANNER CSS*/
 
 
+/* MEDIA QUERIES */
+/*FULLSIZE*/
+@media(min-width: 700px) {
+
+    #hamburger {
+        display: none;
+    }
+
+    #pencarian {
+        width: 500px;
+
+    }
+
+    /*.panel{
+    display: -webkit-box;
+}*/
+    /* #dropdown{
+        height: 175px;
+    width: 567px;
+    left: 129.359px;
+    top: -4px;
+    }*/
+
+}
+
 /*MOBILE SIZE*/
 @media(max-width: 700px) {
     .navigasi {
         display: none;
     }
 
+    h1 {
+        font-size: 1.6em;
+    }
 
 }
