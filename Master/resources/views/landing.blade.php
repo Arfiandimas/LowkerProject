@@ -7,7 +7,7 @@
 @section('content')
 <!-- BAGIAN BANNER -->
 
-    <div  id="section-a" class="uk-container-expand">
+    <div  id="section-a" class="ujicobagithub uk-container-expand">
         <div class="bg-image"></div>
             <h1 class="judul">Search and hire <br>
                 talented independent <br>
