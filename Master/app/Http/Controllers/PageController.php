@@ -17,7 +17,8 @@ class PageController extends Controller
     public function index()
     {
         $users = User::get();
-        return view('landing', compact('users'));
+        $perusahaan = Perusahaan::get();
+        return view('landing', compact('users', 'perusahaan'));
     }
 
     /**

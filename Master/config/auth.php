@@ -46,6 +46,25 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+        'perusahaan' => [
+            'driver' => 'session',
+            'provider' => 'perusahaan',
+        ],
+
+        'apiperusahaan' => [
+            'driver' => 'token',
+            'provider' => 'perusahaan',
+        ],
+
+        'siswa' => [
+            'driver' => 'session',
+            'provider' => 'siswa',
+        ],
+
+        'apisiswa' => [
+          'driver' => 'token',
+          'provider' => 'siswa',
+        ],
     ],
 
     /*
@@ -67,6 +86,14 @@ return [
 
     'providers' => [
         'users' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+        'perusahaan' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+        'siswa' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],

@@ -17,6 +17,8 @@
 
 Route::get('/','PageController@index');
 Route::get('/pencarian','PageController@pencarian')->name('pencarian.cari');
+//login ROUTE
+Route::post('/login2', 'Auth\LoginController@postlogin')->name('login2');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
