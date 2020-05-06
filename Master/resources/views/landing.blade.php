@@ -192,13 +192,17 @@ lowongan Pekerjaan dari berbagai negara</strong></h2>
 <div class="uk-container-expand bg2">    <h2 class="uk-text-center"><strong> Lowongan Kerja Terbaru</strong></h2>
 <div class="uk-position-relative uk-visible-toggle uk-dark uk-margin-medium-top" tabindex="-1" uk-slider="autoplay: false; infinite: true; autoplay-interval : 3000;">
     <ul class="ul-slider uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-5@xl uk-text-center"   uk-scrollspy="cls: uk-animation-slide-top; target: .uk-card; delay: 100; repeat: true">
+        @foreach ($users as $user)
+        @foreach ($perusahaan as $peru)
+        @foreach ($siswa as $siwa)
+        @if($user->id == $peru->user_id xor $user->id == $siwa->user_id )
         <li>
-             <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover cardSliderLowker">
-                    <img class="imgSliderLowker" src="image/mcd.png">
-                    <h4 style="margin-top: 15px;" class="headSliderLowker"><strong>McDonalds</strong></h4>
+                <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover cardSliderLowker">
+                    <img class="imgSliderLowker" src="uploads/avatars/{{$user->avatar}}">
+                    <h4 style="margin-top: 15px;" class="headSliderLowker"><strong>{{$peru->direktur}}</strong></h4>
                     <hr style="margin-top:5px;">
-                    <p class="uk-text-danger postSliderLowker" style="margin-top:-10px;" >Marketing</p>
-                    <p class="uk-text-small txtSilderLowker ">Jgn lupa teks deskripsi ini tidak bisa lebih dari 155 character karena merusak tampilan berikan fungsi limit character lorem30</p>
+                    <p class="uk-text-danger postSliderLowker" style="margin-top:-10px;" >{{$peru->email}}</p>
+                    <p class="uk-text-small txtSilderLowker ">{{$peru->deskripsi}}</p>
                     <hr style="margin-top:5px;">
                     <p class="marginTop">
                         <button class="uk-button uk-button-danger uk-button-small btnSliderLowker">Apply</button>
@@ -208,27 +212,12 @@ lowongan Pekerjaan dari berbagai negara</strong></h2>
                 </div>
         </li>
         <li>
-        <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover cardSliderLowker">
-                    <img class="imgSliderLowker" src="image/mcd.png">
-                    <h4 style="margin-top: 15px;" class="headSliderLowker"><strong>McDonalds</strong></h4>
+                <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover cardSliderLowker">
+                    <img class="imgSliderLowker" src="uploads/avatars/{{$user->avatar}}">
+                    <h4 style="margin-top: 15px;" class="headSliderLowker"><strong>{{$siwa->nama_depan}}</strong></h4>
                     <hr style="margin-top:5px;">
-                    <p class="uk-text-danger postSliderLowker"style="margin-top:-10px;" >Marketing</p>
-                    <p class="uk-text-small txtSilderLowker">Jgn lupa teks deskripsi ini tidak bisa lebih dari 155 character karena merusak tampilan berikan fungsi limit character lorem30</p>
-                    <hr style="margin-top:5px;">
-                    <p class="marginTop">
-                        <button class="uk-button uk-button-danger uk-button-small btnSliderLowker">Apply</button>
-                        <button class="uk-button uk-button-primary uk-button-small btnSliderLowker">Detail</button>
-                    </p>
-
-                </div>
-        </li>
-        <li>
-        <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover cardSliderLowker">
-                    <img class="imgSliderLowker" src="image/mcd.png">
-                    <h4 style="margin-top: 15px;" class="headSliderLowker"><strong>McDonalds</strong></h4>
-                    <hr style="margin-top:5px;">
-                    <p class="uk-text-danger postSliderLowkerr"style="margin-top:-10px;" >Marketing</p>
-                    <p class="uk-text-small txtSilderLowker">Jgn lupa teks deskripsi ini tidak bisa lebih dari 155 character karena merusak tampilan berikan fungsi limit character lorem30</p>
+                    <p class="uk-text-danger postSliderLowker" style="margin-top:-10px;" >{{$siwa->email}}</p>
+                    <p class="uk-text-small txtSilderLowker ">{{$siwa->pekerjaan_diinginkan}}</p>
                     <hr style="margin-top:5px;">
                     <p class="marginTop">
                         <button class="uk-button uk-button-danger uk-button-small btnSliderLowker">Apply</button>
@@ -237,67 +226,10 @@ lowongan Pekerjaan dari berbagai negara</strong></h2>
 
                 </div>
         </li>
-        <li>
-        <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover cardSliderLowker">
-                    <img class="imgSliderLowker" src="image/mcd.png">
-                    <h4 style="margin-top: 15px;" class="headSliderLowker"><strong>McDonalds</strong></h4>
-                    <hr style="margin-top:5px;">
-                    <p class="uk-text-danger postSliderLowkerr"style="margin-top:-10px;" >Marketing</p>
-                    <p class="uk-text-small txtSilderLowker">Jgn lupa teks deskripsi ini tidak bisa lebih dari 155 character karena merusak tampilan berikan fungsi limit character lorem30</p>
-                    <hr style="margin-top:5px;">
-                    <p class="marginTop">
-                        <button class="uk-button uk-button-danger uk-button-small btnSliderLowker">Apply</button>
-                        <button class="uk-button uk-button-primary uk-button-small btnSliderLowker">Detail</button>
-                    </p>
-
-                </div>
-        </li>
-        <li>
-        <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover cardSliderLowker">
-                    <img class="imgSliderLowker" src="image/mcd.png">
-                    <h4 style="margin-top: 15px;" class="headSliderLowker"><strong>McDonalds</strong></h4>
-                    <hr style="margin-top:5px;">
-                    <p class="uk-text-danger postSliderLowkerr"style="margin-top:-10px;" >Marketing</p>
-                    <p class="uk-text-small txtSilderLowker">Jgn lupa teks deskripsi ini tidak bisa lebih dari 155 character karena merusak tampilan berikan fungsi limit character lorem30</p>
-                    <hr style="margin-top:5px;">
-                    <p class="marginTop">
-                        <button class="uk-button uk-button-danger uk-button-small btnSliderLowker">Apply</button>
-                        <button class="uk-button uk-button-primary uk-button-small btnSliderLowker">Detail</button>
-                    </p>
-
-                </div>
-        </li>
-        <li>
-        <div class="uk-card uk-card-default uk-card-body uk-card-info uk-card-hover cardSliderLowker">
-                    <img class="imgSliderLowker" src="image/mcd.png">
-                    <h4 style="margin-top: 15px;" class="headSliderLowker"><strong>McDonalds</strong></h4>
-                    <hr style="margin-top:5px;">
-                    <p class="uk-text-danger postSliderLowkerr"style="margin-top:-10px;" >Marketing</p>
-                    <p class="uk-text-small txtSilderLowker">Jgn lupa teks deskripsi ini tidak bisa lebih dari 155 character karena merusak tampilan berikan fungsi limit character lorem30</p>
-                    <hr style="margin-top:5px;">
-                    <p class="marginTop">
-                        <button class="uk-button uk-button-danger uk-button-small btnSliderLowker">Apply</button>
-                        <button class="uk-button uk-button-primary uk-button-small btnSliderLowker">Detail</button>
-                    </p>
-
-                </div>
-        </li>
-        <li>
-            <img src="image/slider2.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>7</h1></div>
-        </li>
-        <li>
-            <img src="image/slider3.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>8</h1></div>
-        </li>
-        <li>
-            <img src="image/slider4.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>9</h1></div>
-        </li>
-        <li>
-            <img src="image/slider5.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>10</h1></div>
-        </li>
+        @endif
+        @endforeach
+        @endforeach
+        @endforeach
     </ul>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
