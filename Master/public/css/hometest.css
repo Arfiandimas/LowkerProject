@@ -105,11 +105,6 @@ ul {
     margin: 2em 0 0 1em;
 }
 
-.img-dashboard {
-    width: 100vh;
-}
-
-
 .menu-dashboard h4{
     width: 12em;
     margin-top: 1em;
@@ -197,8 +192,6 @@ footer a {
     max-width: 50%;
 
 }
-
-
 
 /*END BANNER CSS*/
 

@@ -6,7 +6,6 @@
 
 @section('content')
 <!-- BAGIAN BANNER -->
-
 @if (session('error'))
     <div class="alert alert-success">
         {{ session('error') }}
@@ -570,7 +569,7 @@ lowongan Pekerjaan dari berbagai negara</strong></h2>
             
                     <!-- START MODAL Login Perusahaan -->
                                     
-                    <div id="login" class="uk-modal-container3" uk-modal>
+                                    <div id="login" class="uk-modal-container3" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body uk-float-center" style="background-image: url(ICON/login.png);">
                             <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
                             <h2 class="uk-text-center "><strong>Your Company</strong></h2>
@@ -579,10 +578,8 @@ lowongan Pekerjaan dari berbagai negara</strong></h2>
 
                                 <div class="uk-container uk-text-center uk-margin uk-padding-large " >
                                     <h4 class="uk-text-left"><strong>Sign In</strong></h4><br>
-                                   
-                                    <form method="POST" action="{{ route('login2') }}">
+                                    <form method="POST" action="{{ route('login') }}">
                                         @csrf
-                                        <input type="hidden" name="status" value="perusahaan">
                                                 
                                         <input id="email"class="uk-input uk-form-width-xlarge uk-margin-small-bottom @error('email') is-invalid @enderror" type="text" name="email" placeholder="Email" value="{{ old('email') }}" required>
                                         @error('email')
@@ -688,54 +685,60 @@ lowongan Pekerjaan dari berbagai negara</strong></h2>
 
                 <!-- START MODAL Login Siswa -->
                                     
-                <div id="loginsiswa" class="uk-modal-container3" uk-modal>
+                                    <div id="loginsiswa" class="uk-modal-container3" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body uk-float-center" style="background-image: url(ICON/login.png);">
                             <button class="uk-modal-close-default" type="uk-button-primary" uk-close></button>
-                            <h2 class="uk-text-center "><strong>As Student</strong></h2>
+                            <h2 class="uk-text-center "><strong>Login as student</strong></h2>
                            
                             <div class="uk-child-width-expand@s uk-text-center uk-flex-column" uk-grid>
 
-                                <div class="uk-container uk-text-center uk-margin uk-padding-large " >
-                                    <h4 class="uk-text-left"><strong>Sign In</strong></h4><br>
+                                <div class="cardModal uk-container uk-text-center uk-margin uk-padding-large " >
+                                    <h4 class="ml--1 uk-text-left"><strong>Sign In</strong></h4><br>
                                     <form method="POST" action="{{ route('login2') }}">
                                         @csrf
+                                        <input type="hidden" name="status" value="perusahaan">
+
                                         <input type="hidden" name="status" value="siswa">
-                                                
-                                        <input id="email"class="uk-input uk-form-width-xlarge uk-margin-small-bottom @error('email') is-invalid @enderror" type="text" name="email" placeholder="Email" value="{{ old('email') }}" required>
+                                        <div class="modalLogin">  
+                                        <input id="email"class="loginInput uk-input uk-form-width-xlarge uk-margin-small-bottom @error('email') is-invalid @enderror" type="text" name="email" placeholder="Email" value="{{ old('email') }}" required>
                                         @error('email')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
 
-                                        <input id="password" class="uk-input uk-form-width-xlarge uk-margin-small-bottom @error('password') is-invalid @enderror" name="password" type="password" placeholder="Password" required>
+                                        <input id="password" class="loginInput uk-input uk-form-width-xlarge uk-margin-small-bottom @error('password') is-invalid @enderror" name="password" type="password" placeholder="Password" required>
                                         @error('password')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
-
+                                        </div>  
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                            <label class="form-check-label" for="remember">
+                                            <label class="ingat form-check-label" for="remember">
                                                 {{ __('Remember Me') }}
                                             </label>
                                         </div>
 
-                                        <button type="submit" class="uk-button uk-button-primary uk-border-rounded uk-width-1-1 uk-margin-small-bottom"><strong>Login</strong></button>    
-                                
+                                        <button type="submit" class="loginBtnModal uk-button uk-button-primary uk-border-rounded uk-width-1-1 uk-margin-small-bottom"><strong>Login</strong></button>    
+                                          
                                     </form> </form>  
 
                                         
-                                        <a href="#signupsiswa" uk-toggle><p class="uk-align-left">Buat Akun</p></a>
+                                        <a href="#signupsiswa" uk-toggle><p class="uk-align-left mr--1">Buat Akun</p></a>
 
                                         @if (Route::has('password.request'))
-                                            <a href="{{ route('password.request') }}"><p class="uk-align-right">Forget Password</p></a>
+                                            <a href="{{ route('password.request') }}"><p class="uk-align-right floatt">Forget Password</p></a>
                                         @endif
                                           
-                                        <h5 class="uk-text-center  uk-text-bold uk-margin-large-top ">Login With</h5>
-                                        <p class="uk-align-center"><a href=""><img class="uk-margin-small-right" src="ICON/twitter.png"></a><a href=""><img src="ICON/facebook.png"></a><a href=""><img class="uk-margin-small-left" src="ICON/google.png"></a></p>
+                                        <h5 class="mt--1 uk-text-center  uk-text-bold uk-margin-large-top">Login With</h5>
+                                        <p class="uk-align-center imageP" style="display: inline-flex;">
+                                        <a href=""><img class="imgModal" src="ICON/twitter.png"></a>
+                                        <a href=""><img class="imgModal" src="ICON/facebook.png"></a>
+                                        <a href=""><img class="imgModal" src="ICON/google.png"></a>
+                                        </p>
                                 </div>
 
 
