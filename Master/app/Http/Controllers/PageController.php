@@ -16,7 +16,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        $users = User::take(4)->get();
+        $users = User::get();
         $siswa = Siswa::inRandomOrder()->take(2)->get();
         $perusahaan = Perusahaan::inRandomOrder()->take(2)->get();
         return view('landing', compact('users', 'perusahaan', 'siswa'));
